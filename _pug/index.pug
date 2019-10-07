@@ -1,16 +1,16 @@
 extends layout.pug
 
 block body
+  //- include components/hero-full-height.pug
   section.hero.is-medium.is-primary
     .hero-body
       .container
         .columns
           .column
             h1.title.is-2.is-spaced Think Active Product Site
-  section.section
-    .container
-      h1.title Product Feature
-      h2.subtitle Tagline of feature
+  include components/feature-tiles
+  include components/feature-item-left
+  include components/feature-item-right
   section.section
     .container
       h1.title Product Feature
