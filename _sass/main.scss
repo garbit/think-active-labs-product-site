@@ -25,3 +25,13 @@ $primary: $TAL-purple;
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
