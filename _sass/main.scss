@@ -15,16 +15,67 @@
 // $pink: #ff8080;
 // $pink-invert: #fff;
 // Update the sans-serif font family
-$TAL-purple: rgb(51, 59, 143);
+$TAL-purple: #36023b;
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// TAL colour palette
+$hero-background: #36023b;
+// $hero-stripes: #f83281; #4d0843 gradient
+
+// poppins font
+$family-sans-serif: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $TAL-purple;
+$primary: #23D9D2;
+$purple: #f83281;
 
+$navbar-item-color: $white;
+
+// navbar
+// a .navbar-item {
+//   color: white;
+//   :hover {
+//     color: $primary;
+//   }
+// }
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
+
+#mobile-navbar a.navbar-item {
+  color: grey;
+  font-weight: 500;
+}
+
+.navbar-burger {
+  color: grey;
+}
+
+@include desktop {
+  #mobile-navbar a.navbar-item {
+    color: white;
+  }
+
+  #mobile-navbar a.navbar-item:hover {
+    color: $primary;
+  }
+}
+
+@include tablet {
+  .hero-image {
+    margin-top:-80%;
+  }
+}
+
+.tag-line {
+  margin-top:-8%;
+}
+
+.hero-image-wrapper {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
 
 .navbar {
   &.is-transparent {
@@ -40,6 +91,16 @@ $primary: $TAL-purple;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.is-full-stripes {
+  @extend .hero;
+  background-image: url("../public/images/hero-stripes.png");
+  margin-top: -$navbar-height;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $hero-background;
 }
 
 body {

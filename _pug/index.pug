@@ -1,13 +1,26 @@
 extends layout.pug
 
 block body
-  //- include components/hero-full-height.pug
-  section.hero.is-medium.is-primary
-    .hero-body
-      .container
-        .columns
-          .column
-            h1.title.is-2.is-spaced Think Active Product Site
+  include components/hero-full-height.pug
+  div.hero-wrapper
+    div.hero-angles
+    section.hero.is-medium.is-full-stripes
+      .hero-body
+        .container
+          .columns
+            .column.is-8
+              h1.title.is-size-1.is-spaced.has-text-white.has-text-weight-bold An activity monitor with schools in mind
+  section.section.hero-image-wrapper
+    .container
+      .columns
+        .column.is-offset-8.is-4.is-offset-3-mobile.is-6-mobile
+          .hero-image
+            img(src="public/images/band-single.png")
+  section.section.tag-line
+    .container.has-text-centered
+      h1.title Think Active. Be Active.
+      h2.subtitle Solution Overview
+      p Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
   include components/feature-tiles
   include components/feature-item-left
   include components/feature-item-right

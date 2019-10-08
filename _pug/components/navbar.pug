@@ -1,17 +1,18 @@
 nav.navbar.is-transparent(role="navigation" aria-label="main navigation")
-  .navbar-brand
-    a.navbar-item(href="./index.html")
-      img(src="public/images/tal-small-white.svg" width="112" height="28")
-    a(role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mobile-navbar")
-      span(aria-hidden="true")
-      span(aria-hidden="true")
-      span(aria-hidden="true")
+  .container
+    .navbar-brand
+      a.navbar-item(href="./index.html")
+        img(src="public/images/nav-logo-white.png")
+      a.navbar-burger.burger(role="button" aria-label="menu" aria-expanded="false" data-target="mobile-navbar")
+        span(aria-hidden="true")
+        span(aria-hidden="true")
+        span(aria-hidden="true")
 
-  #mobile-navbar.navbar-menu
-    .navbar-start
-      a.navbar-item(href="index.html") Home
-      a.navbar-item About
-      a.navbar-item(href="contact.html") Contact
-    .navbar-end
-      a.navbar-item Link
-      a.navbar-item Link
+    #mobile-navbar.navbar-menu.has-text-centered
+      .navbar-start
+        a.navbar-item(href="index.html") Home
+        a.navbar-item About
+        a.navbar-item(href="contact.html") Contact
+      .navbar-end
+        a.navbar-item Link
+        a.navbar-item Link
