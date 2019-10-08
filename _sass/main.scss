@@ -28,20 +28,27 @@ $family-sans-serif: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "R
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: #23D9D2;
-$purple: #f83281;
+$coral: #f83281;
 
 $navbar-item-color: $white;
 
-// navbar
-// a .navbar-item {
-//   color: white;
-//   :hover {
-//     color: $primary;
-//   }
-// }
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
+
+.is-coral {
+  color: $coral;
+}
 
 #mobile-navbar a.navbar-item {
   color: grey;
@@ -59,6 +66,10 @@ $navbar-item-color: $white;
 
   #mobile-navbar a.navbar-item:hover {
     color: $primary;
+  }
+
+  .section {
+    padding: 3rem 6rem;
   }
 }
 
@@ -84,31 +95,43 @@ $navbar-item-color: $white;
   }
 }
 
-.hero-with-full-image {
-  @extend .hero;
-  background-image: url("../public/images/hero-image.jpeg");
+.hero-wrapper {
+  position: relative;
   margin-top: -$navbar-height;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.is-full-stripes {
-  @extend .hero;
-  background-image: url("../public/images/hero-stripes.png");
-  margin-top: -$navbar-height;
+.hero-angles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(-7deg);
+  transform-origin: 0;
+  position: absolute;
+  box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
+  background: $TAL-purple;
+}
+
+.hero-stripes {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url("../public/images/hero-stripes.png") no-repeat center center fixed;
+  // margin-top: -$navbar-height;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $hero-background;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-content {
-  flex: 1;
+.feature {
+  h2 {
+    font-weight: 400;
+    color: black;
+  }
+  h3 {
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
 }

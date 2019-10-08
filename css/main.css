@@ -4938,7 +4938,7 @@ a.navbar-item,
   .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: #fafafa; } }
 
-.hero.is-fullheight-with-navbar, .is-fullheight-with-navbar.hero-with-full-image, .is-fullheight-with-navbar.is-full-stripes {
+.hero.is-fullheight-with-navbar {
   min-height: calc(100vh - 3.25rem); }
 
 .pagination {
@@ -6434,575 +6434,475 @@ label.panel-block {
       flex: none;
       width: 100%; } }
 
-.hero, .hero-with-full-image, .is-full-stripes {
+.hero {
   align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .hero .navbar, .hero-with-full-image .navbar, .is-full-stripes .navbar {
+  .hero .navbar {
     background: none; }
-  .hero .tabs ul, .hero-with-full-image .tabs ul, .is-full-stripes .tabs ul {
+  .hero .tabs ul {
     border-bottom: none; }
-  .hero.is-white, .is-white.hero-with-full-image, .is-white.is-full-stripes {
+  .hero.is-white {
     background-color: white;
     color: #0a0a0a; }
-    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-white.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-white.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-white strong,
-    .is-white.hero-with-full-image strong,
-    .is-white.is-full-stripes strong {
+    .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-white strong {
       color: inherit; }
-    .hero.is-white .title, .is-white.hero-with-full-image .title, .is-white.is-full-stripes .title {
+    .hero.is-white .title {
       color: #0a0a0a; }
-    .hero.is-white .subtitle, .is-white.hero-with-full-image .subtitle, .is-white.is-full-stripes .subtitle {
+    .hero.is-white .subtitle {
       color: rgba(10, 10, 10, 0.9); }
-      .hero.is-white .subtitle a:not(.button), .is-white.hero-with-full-image .subtitle a:not(.button), .is-white.is-full-stripes .subtitle a:not(.button),
-      .hero.is-white .subtitle strong,
-      .is-white.hero-with-full-image .subtitle strong,
-      .is-white.is-full-stripes .subtitle strong {
+      .hero.is-white .subtitle a:not(.button),
+      .hero.is-white .subtitle strong {
         color: #0a0a0a; }
     @media screen and (max-width: 1023px) {
-      .hero.is-white .navbar-menu, .is-white.hero-with-full-image .navbar-menu, .is-white.is-full-stripes .navbar-menu {
+      .hero.is-white .navbar-menu {
         background-color: white; } }
-    .hero.is-white .navbar-item, .is-white.hero-with-full-image .navbar-item, .is-white.is-full-stripes .navbar-item,
-    .hero.is-white .navbar-link,
-    .is-white.hero-with-full-image .navbar-link,
-    .is-white.is-full-stripes .navbar-link {
+    .hero.is-white .navbar-item,
+    .hero.is-white .navbar-link {
       color: rgba(10, 10, 10, 0.7); }
-    .hero.is-white a.navbar-item:hover, .is-white.hero-with-full-image a.navbar-item:hover, .is-white.is-full-stripes a.navbar-item:hover, .hero.is-white a.navbar-item.is-active, .is-white.hero-with-full-image a.navbar-item.is-active, .is-white.is-full-stripes a.navbar-item.is-active,
+    .hero.is-white a.navbar-item:hover, .hero.is-white a.navbar-item.is-active,
     .hero.is-white .navbar-link:hover,
-    .is-white.hero-with-full-image .navbar-link:hover,
-    .is-white.is-full-stripes .navbar-link:hover,
-    .hero.is-white .navbar-link.is-active,
-    .is-white.hero-with-full-image .navbar-link.is-active,
-    .is-white.is-full-stripes .navbar-link.is-active {
+    .hero.is-white .navbar-link.is-active {
       background-color: #f2f2f2;
       color: #0a0a0a; }
-    .hero.is-white .tabs a, .is-white.hero-with-full-image .tabs a, .is-white.is-full-stripes .tabs a {
+    .hero.is-white .tabs a {
       color: #0a0a0a;
       opacity: 0.9; }
-      .hero.is-white .tabs a:hover, .is-white.hero-with-full-image .tabs a:hover, .is-white.is-full-stripes .tabs a:hover {
+      .hero.is-white .tabs a:hover {
         opacity: 1; }
-    .hero.is-white .tabs li.is-active a, .is-white.hero-with-full-image .tabs li.is-active a, .is-white.is-full-stripes .tabs li.is-active a {
+    .hero.is-white .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-white .tabs.is-boxed a, .is-white.hero-with-full-image .tabs.is-boxed a, .is-white.is-full-stripes .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a, .is-white.hero-with-full-image .tabs.is-toggle a, .is-white.is-full-stripes .tabs.is-toggle a {
+    .hero.is-white .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a {
       color: #0a0a0a; }
-      .hero.is-white .tabs.is-boxed a:hover, .is-white.hero-with-full-image .tabs.is-boxed a:hover, .is-white.is-full-stripes .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover, .is-white.hero-with-full-image .tabs.is-toggle a:hover, .is-white.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-white .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-white .tabs.is-boxed li.is-active a, .is-white.hero-with-full-image .tabs.is-boxed li.is-active a, .is-white.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .is-white.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-white.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .is-white.hero-with-full-image .tabs.is-toggle li.is-active a, .is-white.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover, .is-white.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-white.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover {
       background-color: #0a0a0a;
       border-color: #0a0a0a;
       color: white; }
-    .hero.is-white.is-bold, .is-white.is-bold.hero-with-full-image, .is-white.is-bold.is-full-stripes {
+    .hero.is-white.is-bold {
       background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-white.is-bold .navbar-menu, .is-white.is-bold.hero-with-full-image .navbar-menu, .is-white.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-white.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%); } }
-  .hero.is-black, .is-black.hero-with-full-image, .is-black.is-full-stripes {
+  .hero.is-black {
     background-color: #0a0a0a;
     color: white; }
-    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-black.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-black.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-black strong,
-    .is-black.hero-with-full-image strong,
-    .is-black.is-full-stripes strong {
+    .hero.is-black a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-black strong {
       color: inherit; }
-    .hero.is-black .title, .is-black.hero-with-full-image .title, .is-black.is-full-stripes .title {
+    .hero.is-black .title {
       color: white; }
-    .hero.is-black .subtitle, .is-black.hero-with-full-image .subtitle, .is-black.is-full-stripes .subtitle {
+    .hero.is-black .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-black .subtitle a:not(.button), .is-black.hero-with-full-image .subtitle a:not(.button), .is-black.is-full-stripes .subtitle a:not(.button),
-      .hero.is-black .subtitle strong,
-      .is-black.hero-with-full-image .subtitle strong,
-      .is-black.is-full-stripes .subtitle strong {
+      .hero.is-black .subtitle a:not(.button),
+      .hero.is-black .subtitle strong {
         color: white; }
     @media screen and (max-width: 1023px) {
-      .hero.is-black .navbar-menu, .is-black.hero-with-full-image .navbar-menu, .is-black.is-full-stripes .navbar-menu {
+      .hero.is-black .navbar-menu {
         background-color: #0a0a0a; } }
-    .hero.is-black .navbar-item, .is-black.hero-with-full-image .navbar-item, .is-black.is-full-stripes .navbar-item,
-    .hero.is-black .navbar-link,
-    .is-black.hero-with-full-image .navbar-link,
-    .is-black.is-full-stripes .navbar-link {
+    .hero.is-black .navbar-item,
+    .hero.is-black .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-black a.navbar-item:hover, .is-black.hero-with-full-image a.navbar-item:hover, .is-black.is-full-stripes a.navbar-item:hover, .hero.is-black a.navbar-item.is-active, .is-black.hero-with-full-image a.navbar-item.is-active, .is-black.is-full-stripes a.navbar-item.is-active,
+    .hero.is-black a.navbar-item:hover, .hero.is-black a.navbar-item.is-active,
     .hero.is-black .navbar-link:hover,
-    .is-black.hero-with-full-image .navbar-link:hover,
-    .is-black.is-full-stripes .navbar-link:hover,
-    .hero.is-black .navbar-link.is-active,
-    .is-black.hero-with-full-image .navbar-link.is-active,
-    .is-black.is-full-stripes .navbar-link.is-active {
+    .hero.is-black .navbar-link.is-active {
       background-color: black;
       color: white; }
-    .hero.is-black .tabs a, .is-black.hero-with-full-image .tabs a, .is-black.is-full-stripes .tabs a {
+    .hero.is-black .tabs a {
       color: white;
       opacity: 0.9; }
-      .hero.is-black .tabs a:hover, .is-black.hero-with-full-image .tabs a:hover, .is-black.is-full-stripes .tabs a:hover {
+      .hero.is-black .tabs a:hover {
         opacity: 1; }
-    .hero.is-black .tabs li.is-active a, .is-black.hero-with-full-image .tabs li.is-active a, .is-black.is-full-stripes .tabs li.is-active a {
+    .hero.is-black .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-black .tabs.is-boxed a, .is-black.hero-with-full-image .tabs.is-boxed a, .is-black.is-full-stripes .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a, .is-black.hero-with-full-image .tabs.is-toggle a, .is-black.is-full-stripes .tabs.is-toggle a {
+    .hero.is-black .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a {
       color: white; }
-      .hero.is-black .tabs.is-boxed a:hover, .is-black.hero-with-full-image .tabs.is-boxed a:hover, .is-black.is-full-stripes .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover, .is-black.hero-with-full-image .tabs.is-toggle a:hover, .is-black.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-black .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-black .tabs.is-boxed li.is-active a, .is-black.hero-with-full-image .tabs.is-boxed li.is-active a, .is-black.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .is-black.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-black.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .is-black.hero-with-full-image .tabs.is-toggle li.is-active a, .is-black.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover, .is-black.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-black.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-black .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover {
       background-color: white;
       border-color: white;
       color: #0a0a0a; }
-    .hero.is-black.is-bold, .is-black.is-bold.hero-with-full-image, .is-black.is-bold.is-full-stripes {
+    .hero.is-black.is-bold {
       background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-black.is-bold .navbar-menu, .is-black.is-bold.hero-with-full-image .navbar-menu, .is-black.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-black.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%); } }
-  .hero.is-light, .is-light.hero-with-full-image, .is-light.is-full-stripes {
+  .hero.is-light {
     background-color: whitesmoke;
     color: #363636; }
-    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-light.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-light.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-light strong,
-    .is-light.hero-with-full-image strong,
-    .is-light.is-full-stripes strong {
+    .hero.is-light a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-light strong {
       color: inherit; }
-    .hero.is-light .title, .is-light.hero-with-full-image .title, .is-light.is-full-stripes .title {
+    .hero.is-light .title {
       color: #363636; }
-    .hero.is-light .subtitle, .is-light.hero-with-full-image .subtitle, .is-light.is-full-stripes .subtitle {
+    .hero.is-light .subtitle {
       color: rgba(54, 54, 54, 0.9); }
-      .hero.is-light .subtitle a:not(.button), .is-light.hero-with-full-image .subtitle a:not(.button), .is-light.is-full-stripes .subtitle a:not(.button),
-      .hero.is-light .subtitle strong,
-      .is-light.hero-with-full-image .subtitle strong,
-      .is-light.is-full-stripes .subtitle strong {
+      .hero.is-light .subtitle a:not(.button),
+      .hero.is-light .subtitle strong {
         color: #363636; }
     @media screen and (max-width: 1023px) {
-      .hero.is-light .navbar-menu, .is-light.hero-with-full-image .navbar-menu, .is-light.is-full-stripes .navbar-menu {
+      .hero.is-light .navbar-menu {
         background-color: whitesmoke; } }
-    .hero.is-light .navbar-item, .is-light.hero-with-full-image .navbar-item, .is-light.is-full-stripes .navbar-item,
-    .hero.is-light .navbar-link,
-    .is-light.hero-with-full-image .navbar-link,
-    .is-light.is-full-stripes .navbar-link {
+    .hero.is-light .navbar-item,
+    .hero.is-light .navbar-link {
       color: rgba(54, 54, 54, 0.7); }
-    .hero.is-light a.navbar-item:hover, .is-light.hero-with-full-image a.navbar-item:hover, .is-light.is-full-stripes a.navbar-item:hover, .hero.is-light a.navbar-item.is-active, .is-light.hero-with-full-image a.navbar-item.is-active, .is-light.is-full-stripes a.navbar-item.is-active,
+    .hero.is-light a.navbar-item:hover, .hero.is-light a.navbar-item.is-active,
     .hero.is-light .navbar-link:hover,
-    .is-light.hero-with-full-image .navbar-link:hover,
-    .is-light.is-full-stripes .navbar-link:hover,
-    .hero.is-light .navbar-link.is-active,
-    .is-light.hero-with-full-image .navbar-link.is-active,
-    .is-light.is-full-stripes .navbar-link.is-active {
+    .hero.is-light .navbar-link.is-active {
       background-color: #e8e8e8;
       color: #363636; }
-    .hero.is-light .tabs a, .is-light.hero-with-full-image .tabs a, .is-light.is-full-stripes .tabs a {
+    .hero.is-light .tabs a {
       color: #363636;
       opacity: 0.9; }
-      .hero.is-light .tabs a:hover, .is-light.hero-with-full-image .tabs a:hover, .is-light.is-full-stripes .tabs a:hover {
+      .hero.is-light .tabs a:hover {
         opacity: 1; }
-    .hero.is-light .tabs li.is-active a, .is-light.hero-with-full-image .tabs li.is-active a, .is-light.is-full-stripes .tabs li.is-active a {
+    .hero.is-light .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-light .tabs.is-boxed a, .is-light.hero-with-full-image .tabs.is-boxed a, .is-light.is-full-stripes .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a, .is-light.hero-with-full-image .tabs.is-toggle a, .is-light.is-full-stripes .tabs.is-toggle a {
+    .hero.is-light .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a {
       color: #363636; }
-      .hero.is-light .tabs.is-boxed a:hover, .is-light.hero-with-full-image .tabs.is-boxed a:hover, .is-light.is-full-stripes .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover, .is-light.hero-with-full-image .tabs.is-toggle a:hover, .is-light.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-light .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-light .tabs.is-boxed li.is-active a, .is-light.hero-with-full-image .tabs.is-boxed li.is-active a, .is-light.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .is-light.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-light.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .is-light.hero-with-full-image .tabs.is-toggle li.is-active a, .is-light.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover, .is-light.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-light.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-light .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover {
       background-color: #363636;
       border-color: #363636;
       color: whitesmoke; }
-    .hero.is-light.is-bold, .is-light.is-bold.hero-with-full-image, .is-light.is-bold.is-full-stripes {
+    .hero.is-light.is-bold {
       background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-light.is-bold .navbar-menu, .is-light.is-bold.hero-with-full-image .navbar-menu, .is-light.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-light.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); } }
-  .hero.is-dark, .is-dark.hero-with-full-image, .is-dark.is-full-stripes {
+  .hero.is-dark {
     background-color: #363636;
     color: whitesmoke; }
-    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-dark.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-dark.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-dark strong,
-    .is-dark.hero-with-full-image strong,
-    .is-dark.is-full-stripes strong {
+    .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-dark strong {
       color: inherit; }
-    .hero.is-dark .title, .is-dark.hero-with-full-image .title, .is-dark.is-full-stripes .title {
+    .hero.is-dark .title {
       color: whitesmoke; }
-    .hero.is-dark .subtitle, .is-dark.hero-with-full-image .subtitle, .is-dark.is-full-stripes .subtitle {
+    .hero.is-dark .subtitle {
       color: rgba(245, 245, 245, 0.9); }
-      .hero.is-dark .subtitle a:not(.button), .is-dark.hero-with-full-image .subtitle a:not(.button), .is-dark.is-full-stripes .subtitle a:not(.button),
-      .hero.is-dark .subtitle strong,
-      .is-dark.hero-with-full-image .subtitle strong,
-      .is-dark.is-full-stripes .subtitle strong {
+      .hero.is-dark .subtitle a:not(.button),
+      .hero.is-dark .subtitle strong {
         color: whitesmoke; }
     @media screen and (max-width: 1023px) {
-      .hero.is-dark .navbar-menu, .is-dark.hero-with-full-image .navbar-menu, .is-dark.is-full-stripes .navbar-menu {
+      .hero.is-dark .navbar-menu {
         background-color: #363636; } }
-    .hero.is-dark .navbar-item, .is-dark.hero-with-full-image .navbar-item, .is-dark.is-full-stripes .navbar-item,
-    .hero.is-dark .navbar-link,
-    .is-dark.hero-with-full-image .navbar-link,
-    .is-dark.is-full-stripes .navbar-link {
+    .hero.is-dark .navbar-item,
+    .hero.is-dark .navbar-link {
       color: rgba(245, 245, 245, 0.7); }
-    .hero.is-dark a.navbar-item:hover, .is-dark.hero-with-full-image a.navbar-item:hover, .is-dark.is-full-stripes a.navbar-item:hover, .hero.is-dark a.navbar-item.is-active, .is-dark.hero-with-full-image a.navbar-item.is-active, .is-dark.is-full-stripes a.navbar-item.is-active,
+    .hero.is-dark a.navbar-item:hover, .hero.is-dark a.navbar-item.is-active,
     .hero.is-dark .navbar-link:hover,
-    .is-dark.hero-with-full-image .navbar-link:hover,
-    .is-dark.is-full-stripes .navbar-link:hover,
-    .hero.is-dark .navbar-link.is-active,
-    .is-dark.hero-with-full-image .navbar-link.is-active,
-    .is-dark.is-full-stripes .navbar-link.is-active {
+    .hero.is-dark .navbar-link.is-active {
       background-color: #292929;
       color: whitesmoke; }
-    .hero.is-dark .tabs a, .is-dark.hero-with-full-image .tabs a, .is-dark.is-full-stripes .tabs a {
+    .hero.is-dark .tabs a {
       color: whitesmoke;
       opacity: 0.9; }
-      .hero.is-dark .tabs a:hover, .is-dark.hero-with-full-image .tabs a:hover, .is-dark.is-full-stripes .tabs a:hover {
+      .hero.is-dark .tabs a:hover {
         opacity: 1; }
-    .hero.is-dark .tabs li.is-active a, .is-dark.hero-with-full-image .tabs li.is-active a, .is-dark.is-full-stripes .tabs li.is-active a {
+    .hero.is-dark .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-dark .tabs.is-boxed a, .is-dark.hero-with-full-image .tabs.is-boxed a, .is-dark.is-full-stripes .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a, .is-dark.hero-with-full-image .tabs.is-toggle a, .is-dark.is-full-stripes .tabs.is-toggle a {
+    .hero.is-dark .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a {
       color: whitesmoke; }
-      .hero.is-dark .tabs.is-boxed a:hover, .is-dark.hero-with-full-image .tabs.is-boxed a:hover, .is-dark.is-full-stripes .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover, .is-dark.hero-with-full-image .tabs.is-toggle a:hover, .is-dark.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-dark .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-dark .tabs.is-boxed li.is-active a, .is-dark.hero-with-full-image .tabs.is-boxed li.is-active a, .is-dark.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .is-dark.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-dark.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .is-dark.hero-with-full-image .tabs.is-toggle li.is-active a, .is-dark.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover, .is-dark.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-dark.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-dark .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover {
       background-color: whitesmoke;
       border-color: whitesmoke;
       color: #363636; }
-    .hero.is-dark.is-bold, .is-dark.is-bold.hero-with-full-image, .is-dark.is-bold.is-full-stripes {
+    .hero.is-dark.is-bold {
       background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-dark.is-bold .navbar-menu, .is-dark.is-bold.hero-with-full-image .navbar-menu, .is-dark.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-dark.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
-  .hero.is-primary, .is-primary.hero-with-full-image, .is-primary.is-full-stripes {
+  .hero.is-primary {
     background-color: #23D9D2;
     color: #fff; }
-    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-primary.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-primary.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-primary strong,
-    .is-primary.hero-with-full-image strong,
-    .is-primary.is-full-stripes strong {
+    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-primary strong {
       color: inherit; }
-    .hero.is-primary .title, .is-primary.hero-with-full-image .title, .is-primary.is-full-stripes .title {
+    .hero.is-primary .title {
       color: #fff; }
-    .hero.is-primary .subtitle, .is-primary.hero-with-full-image .subtitle, .is-primary.is-full-stripes .subtitle {
+    .hero.is-primary .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-primary .subtitle a:not(.button), .is-primary.hero-with-full-image .subtitle a:not(.button), .is-primary.is-full-stripes .subtitle a:not(.button),
-      .hero.is-primary .subtitle strong,
-      .is-primary.hero-with-full-image .subtitle strong,
-      .is-primary.is-full-stripes .subtitle strong {
+      .hero.is-primary .subtitle a:not(.button),
+      .hero.is-primary .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-primary .navbar-menu, .is-primary.hero-with-full-image .navbar-menu, .is-primary.is-full-stripes .navbar-menu {
+      .hero.is-primary .navbar-menu {
         background-color: #23D9D2; } }
-    .hero.is-primary .navbar-item, .is-primary.hero-with-full-image .navbar-item, .is-primary.is-full-stripes .navbar-item,
-    .hero.is-primary .navbar-link,
-    .is-primary.hero-with-full-image .navbar-link,
-    .is-primary.is-full-stripes .navbar-link {
+    .hero.is-primary .navbar-item,
+    .hero.is-primary .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-primary a.navbar-item:hover, .is-primary.hero-with-full-image a.navbar-item:hover, .is-primary.is-full-stripes a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active, .is-primary.hero-with-full-image a.navbar-item.is-active, .is-primary.is-full-stripes a.navbar-item.is-active,
+    .hero.is-primary a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active,
     .hero.is-primary .navbar-link:hover,
-    .is-primary.hero-with-full-image .navbar-link:hover,
-    .is-primary.is-full-stripes .navbar-link:hover,
-    .hero.is-primary .navbar-link.is-active,
-    .is-primary.hero-with-full-image .navbar-link.is-active,
-    .is-primary.is-full-stripes .navbar-link.is-active {
+    .hero.is-primary .navbar-link.is-active {
       background-color: #1fc3bd;
       color: #fff; }
-    .hero.is-primary .tabs a, .is-primary.hero-with-full-image .tabs a, .is-primary.is-full-stripes .tabs a {
+    .hero.is-primary .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-primary .tabs a:hover, .is-primary.hero-with-full-image .tabs a:hover, .is-primary.is-full-stripes .tabs a:hover {
+      .hero.is-primary .tabs a:hover {
         opacity: 1; }
-    .hero.is-primary .tabs li.is-active a, .is-primary.hero-with-full-image .tabs li.is-active a, .is-primary.is-full-stripes .tabs li.is-active a {
+    .hero.is-primary .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-primary .tabs.is-boxed a, .is-primary.hero-with-full-image .tabs.is-boxed a, .is-primary.is-full-stripes .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a, .is-primary.hero-with-full-image .tabs.is-toggle a, .is-primary.is-full-stripes .tabs.is-toggle a {
+    .hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-primary .tabs.is-boxed a:hover, .is-primary.hero-with-full-image .tabs.is-boxed a:hover, .is-primary.is-full-stripes .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover, .is-primary.hero-with-full-image .tabs.is-toggle a:hover, .is-primary.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-primary .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-primary .tabs.is-boxed li.is-active a, .is-primary.hero-with-full-image .tabs.is-boxed li.is-active a, .is-primary.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .is-primary.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-primary.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .is-primary.hero-with-full-image .tabs.is-toggle li.is-active a, .is-primary.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover, .is-primary.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-primary.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #23D9D2; }
-    .hero.is-primary.is-bold, .is-primary.is-bold.hero-with-full-image, .is-primary.is-bold.is-full-stripes {
+    .hero.is-primary.is-bold {
       background-image: linear-gradient(141deg, #12b795 0%, #23D9D2 71%, #31cee5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-primary.is-bold .navbar-menu, .is-primary.is-bold.hero-with-full-image .navbar-menu, .is-primary.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-primary.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #12b795 0%, #23D9D2 71%, #31cee5 100%); } }
-  .hero.is-link, .is-link.hero-with-full-image, .is-link.is-full-stripes {
+  .hero.is-link {
     background-color: #3273dc;
     color: #fff; }
-    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-link.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-link.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-link strong,
-    .is-link.hero-with-full-image strong,
-    .is-link.is-full-stripes strong {
+    .hero.is-link a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-link strong {
       color: inherit; }
-    .hero.is-link .title, .is-link.hero-with-full-image .title, .is-link.is-full-stripes .title {
+    .hero.is-link .title {
       color: #fff; }
-    .hero.is-link .subtitle, .is-link.hero-with-full-image .subtitle, .is-link.is-full-stripes .subtitle {
+    .hero.is-link .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-link .subtitle a:not(.button), .is-link.hero-with-full-image .subtitle a:not(.button), .is-link.is-full-stripes .subtitle a:not(.button),
-      .hero.is-link .subtitle strong,
-      .is-link.hero-with-full-image .subtitle strong,
-      .is-link.is-full-stripes .subtitle strong {
+      .hero.is-link .subtitle a:not(.button),
+      .hero.is-link .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-link .navbar-menu, .is-link.hero-with-full-image .navbar-menu, .is-link.is-full-stripes .navbar-menu {
+      .hero.is-link .navbar-menu {
         background-color: #3273dc; } }
-    .hero.is-link .navbar-item, .is-link.hero-with-full-image .navbar-item, .is-link.is-full-stripes .navbar-item,
-    .hero.is-link .navbar-link,
-    .is-link.hero-with-full-image .navbar-link,
-    .is-link.is-full-stripes .navbar-link {
+    .hero.is-link .navbar-item,
+    .hero.is-link .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-link a.navbar-item:hover, .is-link.hero-with-full-image a.navbar-item:hover, .is-link.is-full-stripes a.navbar-item:hover, .hero.is-link a.navbar-item.is-active, .is-link.hero-with-full-image a.navbar-item.is-active, .is-link.is-full-stripes a.navbar-item.is-active,
+    .hero.is-link a.navbar-item:hover, .hero.is-link a.navbar-item.is-active,
     .hero.is-link .navbar-link:hover,
-    .is-link.hero-with-full-image .navbar-link:hover,
-    .is-link.is-full-stripes .navbar-link:hover,
-    .hero.is-link .navbar-link.is-active,
-    .is-link.hero-with-full-image .navbar-link.is-active,
-    .is-link.is-full-stripes .navbar-link.is-active {
+    .hero.is-link .navbar-link.is-active {
       background-color: #2366d1;
       color: #fff; }
-    .hero.is-link .tabs a, .is-link.hero-with-full-image .tabs a, .is-link.is-full-stripes .tabs a {
+    .hero.is-link .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-link .tabs a:hover, .is-link.hero-with-full-image .tabs a:hover, .is-link.is-full-stripes .tabs a:hover {
+      .hero.is-link .tabs a:hover {
         opacity: 1; }
-    .hero.is-link .tabs li.is-active a, .is-link.hero-with-full-image .tabs li.is-active a, .is-link.is-full-stripes .tabs li.is-active a {
+    .hero.is-link .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-link .tabs.is-boxed a, .is-link.hero-with-full-image .tabs.is-boxed a, .is-link.is-full-stripes .tabs.is-boxed a, .hero.is-link .tabs.is-toggle a, .is-link.hero-with-full-image .tabs.is-toggle a, .is-link.is-full-stripes .tabs.is-toggle a {
+    .hero.is-link .tabs.is-boxed a, .hero.is-link .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-link .tabs.is-boxed a:hover, .is-link.hero-with-full-image .tabs.is-boxed a:hover, .is-link.is-full-stripes .tabs.is-boxed a:hover, .hero.is-link .tabs.is-toggle a:hover, .is-link.hero-with-full-image .tabs.is-toggle a:hover, .is-link.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-link .tabs.is-boxed a:hover, .hero.is-link .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-link .tabs.is-boxed li.is-active a, .is-link.hero-with-full-image .tabs.is-boxed li.is-active a, .is-link.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-link .tabs.is-boxed li.is-active a:hover, .is-link.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-link.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-link .tabs.is-toggle li.is-active a, .is-link.hero-with-full-image .tabs.is-toggle li.is-active a, .is-link.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-link .tabs.is-toggle li.is-active a:hover, .is-link.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-link.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-link .tabs.is-boxed li.is-active a, .hero.is-link .tabs.is-boxed li.is-active a:hover, .hero.is-link .tabs.is-toggle li.is-active a, .hero.is-link .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #3273dc; }
-    .hero.is-link.is-bold, .is-link.is-bold.hero-with-full-image, .is-link.is-bold.is-full-stripes {
+    .hero.is-link.is-bold {
       background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-link.is-bold .navbar-menu, .is-link.is-bold.hero-with-full-image .navbar-menu, .is-link.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-link.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); } }
-  .hero.is-info, .is-info.hero-with-full-image, .is-info.is-full-stripes {
+  .hero.is-info {
     background-color: #209cee;
     color: #fff; }
-    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-info.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-info.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-info strong,
-    .is-info.hero-with-full-image strong,
-    .is-info.is-full-stripes strong {
+    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-info strong {
       color: inherit; }
-    .hero.is-info .title, .is-info.hero-with-full-image .title, .is-info.is-full-stripes .title {
+    .hero.is-info .title {
       color: #fff; }
-    .hero.is-info .subtitle, .is-info.hero-with-full-image .subtitle, .is-info.is-full-stripes .subtitle {
+    .hero.is-info .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-info .subtitle a:not(.button), .is-info.hero-with-full-image .subtitle a:not(.button), .is-info.is-full-stripes .subtitle a:not(.button),
-      .hero.is-info .subtitle strong,
-      .is-info.hero-with-full-image .subtitle strong,
-      .is-info.is-full-stripes .subtitle strong {
+      .hero.is-info .subtitle a:not(.button),
+      .hero.is-info .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-info .navbar-menu, .is-info.hero-with-full-image .navbar-menu, .is-info.is-full-stripes .navbar-menu {
+      .hero.is-info .navbar-menu {
         background-color: #209cee; } }
-    .hero.is-info .navbar-item, .is-info.hero-with-full-image .navbar-item, .is-info.is-full-stripes .navbar-item,
-    .hero.is-info .navbar-link,
-    .is-info.hero-with-full-image .navbar-link,
-    .is-info.is-full-stripes .navbar-link {
+    .hero.is-info .navbar-item,
+    .hero.is-info .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-info a.navbar-item:hover, .is-info.hero-with-full-image a.navbar-item:hover, .is-info.is-full-stripes a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .is-info.hero-with-full-image a.navbar-item.is-active, .is-info.is-full-stripes a.navbar-item.is-active,
+    .hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active,
     .hero.is-info .navbar-link:hover,
-    .is-info.hero-with-full-image .navbar-link:hover,
-    .is-info.is-full-stripes .navbar-link:hover,
-    .hero.is-info .navbar-link.is-active,
-    .is-info.hero-with-full-image .navbar-link.is-active,
-    .is-info.is-full-stripes .navbar-link.is-active {
+    .hero.is-info .navbar-link.is-active {
       background-color: #118fe4;
       color: #fff; }
-    .hero.is-info .tabs a, .is-info.hero-with-full-image .tabs a, .is-info.is-full-stripes .tabs a {
+    .hero.is-info .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-info .tabs a:hover, .is-info.hero-with-full-image .tabs a:hover, .is-info.is-full-stripes .tabs a:hover {
+      .hero.is-info .tabs a:hover {
         opacity: 1; }
-    .hero.is-info .tabs li.is-active a, .is-info.hero-with-full-image .tabs li.is-active a, .is-info.is-full-stripes .tabs li.is-active a {
+    .hero.is-info .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-info .tabs.is-boxed a, .is-info.hero-with-full-image .tabs.is-boxed a, .is-info.is-full-stripes .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a, .is-info.hero-with-full-image .tabs.is-toggle a, .is-info.is-full-stripes .tabs.is-toggle a {
+    .hero.is-info .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-info .tabs.is-boxed a:hover, .is-info.hero-with-full-image .tabs.is-boxed a:hover, .is-info.is-full-stripes .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover, .is-info.hero-with-full-image .tabs.is-toggle a:hover, .is-info.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-info .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-info .tabs.is-boxed li.is-active a, .is-info.hero-with-full-image .tabs.is-boxed li.is-active a, .is-info.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .is-info.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-info.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .is-info.hero-with-full-image .tabs.is-toggle li.is-active a, .is-info.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover, .is-info.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-info.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #209cee; }
-    .hero.is-info.is-bold, .is-info.is-bold.hero-with-full-image, .is-info.is-bold.is-full-stripes {
+    .hero.is-info.is-bold {
       background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-info.is-bold .navbar-menu, .is-info.is-bold.hero-with-full-image .navbar-menu, .is-info.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-info.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%); } }
-  .hero.is-success, .is-success.hero-with-full-image, .is-success.is-full-stripes {
+  .hero.is-success {
     background-color: #23d160;
     color: #fff; }
-    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-success.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-success.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-success strong,
-    .is-success.hero-with-full-image strong,
-    .is-success.is-full-stripes strong {
+    .hero.is-success a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-success strong {
       color: inherit; }
-    .hero.is-success .title, .is-success.hero-with-full-image .title, .is-success.is-full-stripes .title {
+    .hero.is-success .title {
       color: #fff; }
-    .hero.is-success .subtitle, .is-success.hero-with-full-image .subtitle, .is-success.is-full-stripes .subtitle {
+    .hero.is-success .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-success .subtitle a:not(.button), .is-success.hero-with-full-image .subtitle a:not(.button), .is-success.is-full-stripes .subtitle a:not(.button),
-      .hero.is-success .subtitle strong,
-      .is-success.hero-with-full-image .subtitle strong,
-      .is-success.is-full-stripes .subtitle strong {
+      .hero.is-success .subtitle a:not(.button),
+      .hero.is-success .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-success .navbar-menu, .is-success.hero-with-full-image .navbar-menu, .is-success.is-full-stripes .navbar-menu {
+      .hero.is-success .navbar-menu {
         background-color: #23d160; } }
-    .hero.is-success .navbar-item, .is-success.hero-with-full-image .navbar-item, .is-success.is-full-stripes .navbar-item,
-    .hero.is-success .navbar-link,
-    .is-success.hero-with-full-image .navbar-link,
-    .is-success.is-full-stripes .navbar-link {
+    .hero.is-success .navbar-item,
+    .hero.is-success .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-success a.navbar-item:hover, .is-success.hero-with-full-image a.navbar-item:hover, .is-success.is-full-stripes a.navbar-item:hover, .hero.is-success a.navbar-item.is-active, .is-success.hero-with-full-image a.navbar-item.is-active, .is-success.is-full-stripes a.navbar-item.is-active,
+    .hero.is-success a.navbar-item:hover, .hero.is-success a.navbar-item.is-active,
     .hero.is-success .navbar-link:hover,
-    .is-success.hero-with-full-image .navbar-link:hover,
-    .is-success.is-full-stripes .navbar-link:hover,
-    .hero.is-success .navbar-link.is-active,
-    .is-success.hero-with-full-image .navbar-link.is-active,
-    .is-success.is-full-stripes .navbar-link.is-active {
+    .hero.is-success .navbar-link.is-active {
       background-color: #20bc56;
       color: #fff; }
-    .hero.is-success .tabs a, .is-success.hero-with-full-image .tabs a, .is-success.is-full-stripes .tabs a {
+    .hero.is-success .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-success .tabs a:hover, .is-success.hero-with-full-image .tabs a:hover, .is-success.is-full-stripes .tabs a:hover {
+      .hero.is-success .tabs a:hover {
         opacity: 1; }
-    .hero.is-success .tabs li.is-active a, .is-success.hero-with-full-image .tabs li.is-active a, .is-success.is-full-stripes .tabs li.is-active a {
+    .hero.is-success .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-success .tabs.is-boxed a, .is-success.hero-with-full-image .tabs.is-boxed a, .is-success.is-full-stripes .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a, .is-success.hero-with-full-image .tabs.is-toggle a, .is-success.is-full-stripes .tabs.is-toggle a {
+    .hero.is-success .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-success .tabs.is-boxed a:hover, .is-success.hero-with-full-image .tabs.is-boxed a:hover, .is-success.is-full-stripes .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover, .is-success.hero-with-full-image .tabs.is-toggle a:hover, .is-success.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-success .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-success .tabs.is-boxed li.is-active a, .is-success.hero-with-full-image .tabs.is-boxed li.is-active a, .is-success.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .is-success.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-success.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .is-success.hero-with-full-image .tabs.is-toggle li.is-active a, .is-success.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover, .is-success.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-success.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-success .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #23d160; }
-    .hero.is-success.is-bold, .is-success.is-bold.hero-with-full-image, .is-success.is-bold.is-full-stripes {
+    .hero.is-success.is-bold {
       background-image: linear-gradient(141deg, #12af2f 0%, #23d160 71%, #2ce28a 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-success.is-bold .navbar-menu, .is-success.is-bold.hero-with-full-image .navbar-menu, .is-success.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-success.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #12af2f 0%, #23d160 71%, #2ce28a 100%); } }
-  .hero.is-warning, .is-warning.hero-with-full-image, .is-warning.is-full-stripes {
+  .hero.is-warning {
     background-color: #ffdd57;
     color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-warning.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-warning.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-warning strong,
-    .is-warning.hero-with-full-image strong,
-    .is-warning.is-full-stripes strong {
+    .hero.is-warning a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-warning strong {
       color: inherit; }
-    .hero.is-warning .title, .is-warning.hero-with-full-image .title, .is-warning.is-full-stripes .title {
+    .hero.is-warning .title {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning .subtitle, .is-warning.hero-with-full-image .subtitle, .is-warning.is-full-stripes .subtitle {
+    .hero.is-warning .subtitle {
       color: rgba(0, 0, 0, 0.9); }
-      .hero.is-warning .subtitle a:not(.button), .is-warning.hero-with-full-image .subtitle a:not(.button), .is-warning.is-full-stripes .subtitle a:not(.button),
-      .hero.is-warning .subtitle strong,
-      .is-warning.hero-with-full-image .subtitle strong,
-      .is-warning.is-full-stripes .subtitle strong {
+      .hero.is-warning .subtitle a:not(.button),
+      .hero.is-warning .subtitle strong {
         color: rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 1023px) {
-      .hero.is-warning .navbar-menu, .is-warning.hero-with-full-image .navbar-menu, .is-warning.is-full-stripes .navbar-menu {
+      .hero.is-warning .navbar-menu {
         background-color: #ffdd57; } }
-    .hero.is-warning .navbar-item, .is-warning.hero-with-full-image .navbar-item, .is-warning.is-full-stripes .navbar-item,
-    .hero.is-warning .navbar-link,
-    .is-warning.hero-with-full-image .navbar-link,
-    .is-warning.is-full-stripes .navbar-link {
+    .hero.is-warning .navbar-item,
+    .hero.is-warning .navbar-link {
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning a.navbar-item:hover, .is-warning.hero-with-full-image a.navbar-item:hover, .is-warning.is-full-stripes a.navbar-item:hover, .hero.is-warning a.navbar-item.is-active, .is-warning.hero-with-full-image a.navbar-item.is-active, .is-warning.is-full-stripes a.navbar-item.is-active,
+    .hero.is-warning a.navbar-item:hover, .hero.is-warning a.navbar-item.is-active,
     .hero.is-warning .navbar-link:hover,
-    .is-warning.hero-with-full-image .navbar-link:hover,
-    .is-warning.is-full-stripes .navbar-link:hover,
-    .hero.is-warning .navbar-link.is-active,
-    .is-warning.hero-with-full-image .navbar-link.is-active,
-    .is-warning.is-full-stripes .navbar-link.is-active {
+    .hero.is-warning .navbar-link.is-active {
       background-color: #ffd83d;
       color: rgba(0, 0, 0, 0.7); }
-    .hero.is-warning .tabs a, .is-warning.hero-with-full-image .tabs a, .is-warning.is-full-stripes .tabs a {
+    .hero.is-warning .tabs a {
       color: rgba(0, 0, 0, 0.7);
       opacity: 0.9; }
-      .hero.is-warning .tabs a:hover, .is-warning.hero-with-full-image .tabs a:hover, .is-warning.is-full-stripes .tabs a:hover {
+      .hero.is-warning .tabs a:hover {
         opacity: 1; }
-    .hero.is-warning .tabs li.is-active a, .is-warning.hero-with-full-image .tabs li.is-active a, .is-warning.is-full-stripes .tabs li.is-active a {
+    .hero.is-warning .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-warning .tabs.is-boxed a, .is-warning.hero-with-full-image .tabs.is-boxed a, .is-warning.is-full-stripes .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a, .is-warning.hero-with-full-image .tabs.is-toggle a, .is-warning.is-full-stripes .tabs.is-toggle a {
+    .hero.is-warning .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a {
       color: rgba(0, 0, 0, 0.7); }
-      .hero.is-warning .tabs.is-boxed a:hover, .is-warning.hero-with-full-image .tabs.is-boxed a:hover, .is-warning.is-full-stripes .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover, .is-warning.hero-with-full-image .tabs.is-toggle a:hover, .is-warning.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-warning .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-warning .tabs.is-boxed li.is-active a, .is-warning.hero-with-full-image .tabs.is-boxed li.is-active a, .is-warning.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .is-warning.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-warning.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .is-warning.hero-with-full-image .tabs.is-toggle li.is-active a, .is-warning.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover, .is-warning.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-warning.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-warning .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover {
       background-color: rgba(0, 0, 0, 0.7);
       border-color: rgba(0, 0, 0, 0.7);
       color: #ffdd57; }
-    .hero.is-warning.is-bold, .is-warning.is-bold.hero-with-full-image, .is-warning.is-bold.is-full-stripes {
+    .hero.is-warning.is-bold {
       background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-warning.is-bold .navbar-menu, .is-warning.is-bold.hero-with-full-image .navbar-menu, .is-warning.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-warning.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%); } }
-  .hero.is-danger, .is-danger.hero-with-full-image, .is-danger.is-full-stripes {
+  .hero.is-danger {
     background-color: #ff3860;
     color: #fff; }
-    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-danger.hero-with-full-image a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .is-danger.is-full-stripes a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
-    .hero.is-danger strong,
-    .is-danger.hero-with-full-image strong,
-    .is-danger.is-full-stripes strong {
+    .hero.is-danger a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+    .hero.is-danger strong {
       color: inherit; }
-    .hero.is-danger .title, .is-danger.hero-with-full-image .title, .is-danger.is-full-stripes .title {
+    .hero.is-danger .title {
       color: #fff; }
-    .hero.is-danger .subtitle, .is-danger.hero-with-full-image .subtitle, .is-danger.is-full-stripes .subtitle {
+    .hero.is-danger .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-danger .subtitle a:not(.button), .is-danger.hero-with-full-image .subtitle a:not(.button), .is-danger.is-full-stripes .subtitle a:not(.button),
-      .hero.is-danger .subtitle strong,
-      .is-danger.hero-with-full-image .subtitle strong,
-      .is-danger.is-full-stripes .subtitle strong {
+      .hero.is-danger .subtitle a:not(.button),
+      .hero.is-danger .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1023px) {
-      .hero.is-danger .navbar-menu, .is-danger.hero-with-full-image .navbar-menu, .is-danger.is-full-stripes .navbar-menu {
+      .hero.is-danger .navbar-menu {
         background-color: #ff3860; } }
-    .hero.is-danger .navbar-item, .is-danger.hero-with-full-image .navbar-item, .is-danger.is-full-stripes .navbar-item,
-    .hero.is-danger .navbar-link,
-    .is-danger.hero-with-full-image .navbar-link,
-    .is-danger.is-full-stripes .navbar-link {
+    .hero.is-danger .navbar-item,
+    .hero.is-danger .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-danger a.navbar-item:hover, .is-danger.hero-with-full-image a.navbar-item:hover, .is-danger.is-full-stripes a.navbar-item:hover, .hero.is-danger a.navbar-item.is-active, .is-danger.hero-with-full-image a.navbar-item.is-active, .is-danger.is-full-stripes a.navbar-item.is-active,
+    .hero.is-danger a.navbar-item:hover, .hero.is-danger a.navbar-item.is-active,
     .hero.is-danger .navbar-link:hover,
-    .is-danger.hero-with-full-image .navbar-link:hover,
-    .is-danger.is-full-stripes .navbar-link:hover,
-    .hero.is-danger .navbar-link.is-active,
-    .is-danger.hero-with-full-image .navbar-link.is-active,
-    .is-danger.is-full-stripes .navbar-link.is-active {
+    .hero.is-danger .navbar-link.is-active {
       background-color: #ff1f4b;
       color: #fff; }
-    .hero.is-danger .tabs a, .is-danger.hero-with-full-image .tabs a, .is-danger.is-full-stripes .tabs a {
+    .hero.is-danger .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-danger .tabs a:hover, .is-danger.hero-with-full-image .tabs a:hover, .is-danger.is-full-stripes .tabs a:hover {
+      .hero.is-danger .tabs a:hover {
         opacity: 1; }
-    .hero.is-danger .tabs li.is-active a, .is-danger.hero-with-full-image .tabs li.is-active a, .is-danger.is-full-stripes .tabs li.is-active a {
+    .hero.is-danger .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-danger .tabs.is-boxed a, .is-danger.hero-with-full-image .tabs.is-boxed a, .is-danger.is-full-stripes .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a, .is-danger.hero-with-full-image .tabs.is-toggle a, .is-danger.is-full-stripes .tabs.is-toggle a {
+    .hero.is-danger .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-danger .tabs.is-boxed a:hover, .is-danger.hero-with-full-image .tabs.is-boxed a:hover, .is-danger.is-full-stripes .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover, .is-danger.hero-with-full-image .tabs.is-toggle a:hover, .is-danger.is-full-stripes .tabs.is-toggle a:hover {
+      .hero.is-danger .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-danger .tabs.is-boxed li.is-active a, .is-danger.hero-with-full-image .tabs.is-boxed li.is-active a, .is-danger.is-full-stripes .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .is-danger.hero-with-full-image .tabs.is-boxed li.is-active a:hover, .is-danger.is-full-stripes .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .is-danger.hero-with-full-image .tabs.is-toggle li.is-active a, .is-danger.is-full-stripes .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover, .is-danger.hero-with-full-image .tabs.is-toggle li.is-active a:hover, .is-danger.is-full-stripes .tabs.is-toggle li.is-active a:hover {
+    .hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #ff3860; }
-    .hero.is-danger.is-bold, .is-danger.is-bold.hero-with-full-image, .is-danger.is-bold.is-full-stripes {
+    .hero.is-danger.is-bold {
       background-image: linear-gradient(141deg, #ff0561 0%, #ff3860 71%, #ff5257 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-danger.is-bold .navbar-menu, .is-danger.is-bold.hero-with-full-image .navbar-menu, .is-danger.is-bold.is-full-stripes .navbar-menu {
+        .hero.is-danger.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #ff0561 0%, #ff3860 71%, #ff5257 100%); } }
-  .hero.is-small .hero-body, .is-small.hero-with-full-image .hero-body, .is-small.is-full-stripes .hero-body {
+  .hero.is-small .hero-body {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem; }
   @media screen and (min-width: 769px), print {
-    .hero.is-medium .hero-body, .is-medium.hero-with-full-image .hero-body, .is-medium.is-full-stripes .hero-body {
+    .hero.is-medium .hero-body {
       padding-bottom: 9rem;
       padding-top: 9rem; } }
   @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body, .is-large.hero-with-full-image .hero-body, .is-large.is-full-stripes .hero-body {
+    .hero.is-large .hero-body {
       padding-bottom: 18rem;
       padding-top: 18rem; } }
-  .hero.is-halfheight .hero-body, .is-halfheight.hero-with-full-image .hero-body, .is-halfheight.is-full-stripes .hero-body, .hero.is-fullheight .hero-body, .is-fullheight.hero-with-full-image .hero-body, .is-fullheight.is-full-stripes .hero-body, .hero.is-fullheight-with-navbar .hero-body, .is-fullheight-with-navbar.hero-with-full-image .hero-body, .is-fullheight-with-navbar.is-full-stripes .hero-body {
+  .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
     align-items: center;
     display: flex; }
-    .hero.is-halfheight .hero-body > .container, .is-halfheight.hero-with-full-image .hero-body > .container, .is-halfheight.is-full-stripes .hero-body > .container, .hero.is-fullheight .hero-body > .container, .is-fullheight.hero-with-full-image .hero-body > .container, .is-fullheight.is-full-stripes .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container, .is-fullheight-with-navbar.hero-with-full-image .hero-body > .container, .is-fullheight-with-navbar.is-full-stripes .hero-body > .container {
+    .hero.is-halfheight .hero-body > .container, .hero.is-fullheight .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container {
       flex-grow: 1;
       flex-shrink: 1; }
-  .hero.is-halfheight, .is-halfheight.hero-with-full-image, .is-halfheight.is-full-stripes {
+  .hero.is-halfheight {
     min-height: 50vh; }
-  .hero.is-fullheight, .is-fullheight.hero-with-full-image, .is-fullheight.is-full-stripes {
+  .hero.is-fullheight {
     min-height: 100vh; }
 
 .hero-video {
@@ -7056,6 +6956,17 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.page-content {
+  flex: 1; }
+
+.is-coral {
+  color: #f83281; }
+
 #mobile-navbar a.navbar-item {
   color: grey;
   font-weight: 500; }
@@ -7067,7 +6978,9 @@ label.panel-block {
   #mobile-navbar a.navbar-item {
     color: white; }
   #mobile-navbar a.navbar-item:hover {
-    color: #23D9D2; } }
+    color: #23D9D2; }
+  .section {
+    padding: 3rem 6rem; } }
 
 @media screen and (min-width: 769px), print {
   .hero-image {
@@ -7084,25 +6997,36 @@ label.panel-block {
   background-color: transparent;
   background-image: none; }
 
-.hero-with-full-image {
-  background-image: url("../public/images/hero-image.jpeg");
-  margin-top: -3.25rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.hero-wrapper {
+  position: relative;
+  margin-top: -3.25rem; }
 
-.is-full-stripes {
-  background-image: url("../public/images/hero-stripes.png");
-  margin-top: -3.25rem;
+.hero-angles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(-7deg);
+  transform-origin: 0;
+  position: absolute;
+  box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
+  background: #36023b; }
+
+.hero-stripes {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url("../public/images/hero-stripes.png") no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #36023b; }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column; }
+.feature h2 {
+  font-weight: 400;
+  color: black; }
 
-.page-content {
-  flex: 1; }
+.feature h3 {
+  font-weight: 500; }
+
+.feature .subtitle {
+  font-size: 1.1rem; }
