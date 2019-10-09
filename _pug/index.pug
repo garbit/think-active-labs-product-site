@@ -12,12 +12,14 @@ block body
             .column.is-8
               h1.title.is-size-1.is-spaced.has-text-white.has-text-weight-bold An activity monitor with schools in mind
               a.button.is-primary Pre-order now
+
   section.section.hero-image-wrapper
     .container
       .columns
         .column.is-offset-8.is-4.is-offset-3-mobile.is-6-mobile
           .hero-image
             img(src="public/images/band-single.png")
+
   section.section.tag-line
     .container.has-text-centered
       .columns
@@ -25,36 +27,43 @@ block body
           h1.title Think Active. Be Active.
           h2.subtitle Solution Overview
           p Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-  //- include components/feature-tiles
-  section.section.feature
+
+  section.section.feature.active-hub
     .container
       .columns.is-vcentered
-        .column.is-6
+        .column.is-5
           h2.title Playful. But Safe.
           h3.subtitle.is-coral Pseudonymous avatars.
           p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.
-        .column.is-6
-          img.feature-image(src="public/images/avatars.png")
-    //- include components/feature-item-right
+        .column.is-6.is-offset-1
+          img.feature-image(src="public/images/avatars-activehub.png")
+
   section.section.feature.feature-background-right
     .container
       .columns.is-vcentered
-        .column.is-6
-          h2.title Playful. But Safe.
-          h3.subtitle.is-coral Pseudonymous avatars.
-          p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.
-        .column.is-6
+        .column.is-4
+          h2.title Easy to deploy, manage and scale.
+          h3.subtitle.is-coral Management Portal
+          .feature-descriptions
+            .selector.active
+              h3.management-at-scale Management at Scale
+              p Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.
+            .selector
+              h3.set-challenges Set Challenges
+              p Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.
+            .selector
+              h3.custom-reports Generate Custom Data Reports
+              p Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.
+        .column.is-7.is-offset-1
           div.browser-slider-wrapper
             div.browser-circle.red
             div.browser-circle.yellow
             div.browser-circle.green
             div.browser-slider
               div
-                img(src="public/images/avatars.png")
+                img(src="public/images/test1.png")
               div
-                img(src="public/images/avatars.png")
+                img(src="public/images/test2.png")
               div
-                img(src="public/images/avatars.png")
-              div
-                img(src="public/images/avatars.png")
+                img(src="public/images/test3.png")
 

@@ -16,7 +16,7 @@
 // $pink-invert: #fff;
 // Update the sans-serif font family
 $TAL-purple: #36023b;
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+// $family-sans-serif: "Helvetica", "Arial", sans-serif;
 
 // TAL colour palette
 $hero-background: #36023b;
@@ -136,6 +136,26 @@ body {
   }
 }
 
+// #8b8b8b 49%
+// 139 0 .49
+// .active-hub::before {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   top: 0px;
+//   left: 0px;
+//   background: #003832;
+//   // transform: skewY(-90deg);
+//   z-index: -1;
+// }
+
+.active-hub {
+  // background: linear-gradient(-45deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1));
+  background: linear-gradient(-15deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+}
+
 .browser-slider-wrapper {
   // background: url("../public/images/browser.png") top center no-repeat;
   // background-size: 100% 100%;
@@ -165,6 +185,58 @@ body {
   .browser-circle.green {
     border: 3px #29ce42 solid;
     left: 16px;
+  }
+}
+
+.feature-descriptions {
+  .selector {
+    color: #939c9e;
+    cursor: pointer;
+  }
+
+  .selector.active {
+    color: black;
+  }
+
+  .selector:hover {
+    color: black;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+
+  h3.management-at-scale::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\F065";
+    left: -1.5rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute;
+  }
+
+  h3.set-challenges::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f6fc";
+    left: -1.5rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute;
+  }
+
+  h3.custom-reports::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f200";
+    left: -1.5rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute;
   }
 }
 

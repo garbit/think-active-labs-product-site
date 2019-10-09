@@ -7031,6 +7031,9 @@ body {
 .feature .subtitle {
   font-size: 1.1rem; }
 
+.active-hub {
+  background: linear-gradient(-15deg, rgba(139, 139, 139, 0.3), white, white, white); }
+
 .browser-slider-wrapper {
   border: 12px solid #eee;
   border-width: 14px 5px 5px 5px;
@@ -7054,3 +7057,46 @@ body {
   .browser-slider-wrapper .browser-circle.green {
     border: 3px #29ce42 solid;
     left: 16px; }
+
+.feature-descriptions .selector {
+  color: #939c9e;
+  cursor: pointer; }
+
+.feature-descriptions .selector.active {
+  color: black; }
+
+.feature-descriptions .selector:hover {
+  color: black; }
+
+.feature-descriptions p {
+  margin-bottom: 2.5rem; }
+
+.feature-descriptions h3.management-at-scale::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F065";
+  left: -1.5rem;
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  position: absolute; }
+
+.feature-descriptions h3.set-challenges::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f6fc";
+  left: -1.5rem;
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  position: absolute; }
+
+.feature-descriptions h3.custom-reports::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f200";
+  left: -1.5rem;
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  position: absolute; }
