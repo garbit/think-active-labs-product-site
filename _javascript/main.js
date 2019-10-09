@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+$(document).ready(function(){
+  $('.browser-slider').slick({
+    arrows: false
+  });
+});
