@@ -75,13 +75,13 @@ body {
 
 @include tablet {
   .hero-image {
-    margin-top:-80%;
+    margin-top:-120%;
   }
 }
 
-.tag-line {
-  margin-top:-8%;
-}
+// .tag-line {
+//   margin-top:-8%;
+// }
 
 .hero-image-wrapper {
   padding-top: 0rem !important;
@@ -237,6 +237,23 @@ body {
     display: inline-block;
     text-decoration: inherit;
     position: absolute;
+  }
+}
+
+.kit-contents {
+  img {
+    max-height: 300px;
+  }
+  .kit-item {
+    padding: 2rem;
+    h2, p {
+      text-align: left;
+    }
+    span {
+      // background-color: #00FFF5;
+      // padding: 0.5rem;
+      // font-weight: normal;
+    }
   }
 }
 

@@ -6984,10 +6984,7 @@ body {
 
 @media screen and (min-width: 769px), print {
   .hero-image {
-    margin-top: -80%; } }
-
-.tag-line {
-  margin-top: -8%; }
+    margin-top: -120%; } }
 
 .hero-image-wrapper {
   padding-top: 0rem !important;
@@ -7100,3 +7097,11 @@ body {
   display: inline-block;
   text-decoration: inherit;
   position: absolute; }
+
+.kit-contents img {
+  max-height: 300px; }
+
+.kit-contents .kit-item {
+  padding: 2rem; }
+  .kit-contents .kit-item h2, .kit-contents .kit-item p {
+    text-align: left; }
