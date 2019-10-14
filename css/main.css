@@ -7071,7 +7071,7 @@ body {
 .feature-descriptions h3.management-at-scale::before {
   font-family: "Font Awesome 5 Free";
   content: "\F065";
-  left: -1.5rem;
+  left: -1.25rem;
   font-weight: 900;
   font-style: normal;
   display: inline-block;
@@ -7081,7 +7081,7 @@ body {
 .feature-descriptions h3.set-challenges::before {
   font-family: "Font Awesome 5 Free";
   content: "\f6fc";
-  left: -1.5rem;
+  left: -1.25rem;
   font-weight: 900;
   font-style: normal;
   display: inline-block;
@@ -7091,7 +7091,7 @@ body {
 .feature-descriptions h3.custom-reports::before {
   font-family: "Font Awesome 5 Free";
   content: "\f200";
-  left: -1.5rem;
+  left: -1.25rem;
   font-weight: 900;
   font-style: normal;
   display: inline-block;
