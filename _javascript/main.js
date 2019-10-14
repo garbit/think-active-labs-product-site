@@ -31,9 +31,11 @@ $(document).ready(function(){
   });
 
   $('.feature-descriptions .selector').on('click', function(e) {
-    console.log($(this).index());
+    if($(this).parent().hasClass('is-portal')){
+      browserSlider[0].slick.slickGoTo(parseInt($(this).index()));
+    }
+
     $('.feature-descriptions .selector').not(this).removeClass('active');
     $(this).toggleClass('active');
-    browserSlider[0].slick.slickGoTo(parseInt($(this).index()));
   });
 });
