@@ -123,6 +123,49 @@ body {
   background-color: $hero-background;
 }
 
+.our-core-values {
+  display: flex;
+
+  @include mobile {
+    .value-image {
+      width: 0%;
+    }
+    .value-text {
+      padding: 10%;
+      flex: none;
+      width: 100%;
+      background-color: $primary;
+    }
+  }
+
+  @include tablet {
+    .value-image.learning-in-school {
+      background: url("../public/images/learning-in-school.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: none;
+      width: 50%;
+    }
+
+    .value-image.football-match {
+      background: url("../public/images/football-match.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: none;
+      width: 50%;
+    }
+
+    .value-text {
+      padding: 10%;
+      flex: none;
+      width: 50%;
+      background-color: $primary;
+    }
+  }
+}
+
 .feature {
   h2 {
     font-weight: 400;
@@ -188,55 +231,140 @@ body {
   }
 }
 
-.feature-descriptions {
-  .selector {
-    color: #939c9e;
-    cursor: pointer;
+.feature {
+  .feature-image {
+    text-align: center;
+    img {
+      max-height: 40vh;
+    }
   }
 
-  .selector.active {
-    color: black;
-  }
+  .feature-descriptions {
+    position:relative;
 
-  .selector:hover {
-    color: black;
-  }
+    .selector {
+      color: #939c9e;
+      cursor: pointer;
+    }
 
-  p {
-    margin-bottom: 2.5rem;
-  }
+    .selector.active {
+      color: black;
+    }
 
-  h3.management-at-scale::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\F065";
-    left: -1.25rem;
-    font-weight: 900;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    position: absolute;
-  }
+    .selector:hover {
+      color: black;
+    }
 
-  h3.set-challenges::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f6fc";
-    left: -1.25rem;
-    font-weight: 900;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    position: absolute;
-  }
+    @include mobile {
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    @include tablet {
+      p {
+        margin-bottom: 2.5rem;
+      }
+    }
 
-  h3.custom-reports::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f200";
-    left: -1.25rem;
-    font-weight: 900;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    position: absolute;
+    h3.management-at-scale::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\F065";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.set-challenges::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f6fc";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.custom-reports::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f200";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    // band features
+    h3.activity-tracking::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f70c";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.water-resistance::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f043";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.battery-life::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f240";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.bluetooth::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f293";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.durable-strap::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c1";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.identity::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f6d3";
+      left: -1.25rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
   }
 }
 
@@ -266,4 +394,24 @@ body {
 //     right: -65% !important;
 //     position: absolute;
 //     background: #14236E;
+// }
+
+// FOOTER
+// footer {
+//   position: relative;
+//   .footer-content {
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     transform: skewY(-7deg);
+//     transform-origin: 0;
+//     position: absolute;
+//     box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
+//     background: #36023b;
+//     div {
+//       position: relative;
+//       height: 100%;
+//       width: 100%;
+//     }
+//   }
 // }

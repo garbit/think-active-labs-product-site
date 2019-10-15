@@ -7018,6 +7018,37 @@ body {
   background-size: cover;
   background-color: #36023b; }
 
+.our-core-values {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .our-core-values .value-image {
+      width: 0%; }
+    .our-core-values .value-text {
+      padding: 10%;
+      flex: none;
+      width: 100%;
+      background-color: #23D9D2; } }
+  @media screen and (min-width: 769px), print {
+    .our-core-values .value-image.learning-in-school {
+      background: url("../public/images/learning-in-school.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: none;
+      width: 50%; }
+    .our-core-values .value-image.football-match {
+      background: url("../public/images/football-match.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: none;
+      width: 50%; }
+    .our-core-values .value-text {
+      padding: 10%;
+      flex: none;
+      width: 50%;
+      background-color: #23D9D2; } }
+
 .feature h2 {
   font-weight: 400;
   color: black; }
@@ -7055,48 +7086,107 @@ body {
     border: 3px #29ce42 solid;
     left: 16px; }
 
-.feature-descriptions .selector {
-  color: #939c9e;
-  cursor: pointer; }
+.feature .feature-image {
+  text-align: center; }
+  .feature .feature-image img {
+    max-height: 40vh; }
 
-.feature-descriptions .selector.active {
-  color: black; }
-
-.feature-descriptions .selector:hover {
-  color: black; }
-
-.feature-descriptions p {
-  margin-bottom: 2.5rem; }
-
-.feature-descriptions h3.management-at-scale::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\F065";
-  left: -1.25rem;
-  font-weight: 900;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  position: absolute; }
-
-.feature-descriptions h3.set-challenges::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f6fc";
-  left: -1.25rem;
-  font-weight: 900;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  position: absolute; }
-
-.feature-descriptions h3.custom-reports::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f200";
-  left: -1.25rem;
-  font-weight: 900;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  position: absolute; }
+.feature .feature-descriptions {
+  position: relative; }
+  .feature .feature-descriptions .selector {
+    color: #939c9e;
+    cursor: pointer; }
+  .feature .feature-descriptions .selector.active {
+    color: black; }
+  .feature .feature-descriptions .selector:hover {
+    color: black; }
+  @media screen and (max-width: 768px) {
+    .feature .feature-descriptions p {
+      margin-bottom: 1rem; } }
+  @media screen and (min-width: 769px), print {
+    .feature .feature-descriptions p {
+      margin-bottom: 2.5rem; } }
+  .feature .feature-descriptions h3.management-at-scale::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\F065";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.set-challenges::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f6fc";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.custom-reports::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f200";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.activity-tracking::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f70c";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.water-resistance::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f043";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.battery-life::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f240";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.bluetooth::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f293";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.durable-strap::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c1";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
+  .feature .feature-descriptions h3.identity::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f6d3";
+    left: -1.25rem;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute; }
 
 .kit-contents img {
   max-height: 300px; }
