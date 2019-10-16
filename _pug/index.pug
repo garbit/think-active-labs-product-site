@@ -81,38 +81,6 @@ block body
               p Our comprehensive kit management solution. This portal lets you set challenges, manage deployments and manage your equipment. Each deployment’s activity data is safely stored here to generate reports with our insights services.
   //- Kit contents end
 
-
-  //- Kit contents start
-  //- section.section.feature.kit-contents
-  //-   .container.has-text-centered
-  //-     .columns
-  //-       .column.is-12.is-vcentered
-  //-         h2.title What comes in the kit?
-  //-   .container
-  //-     .columns.has-text-centered.is-vcentered
-  //-       .column.is-4.kit-item
-  //-         img.feature-image(src="public/images/band-single.png")
-  //-       .column.is-4.kit-item
-  //-         img.feature-image(src="public/images/avatars-activehub.png")
-  //-       .column.is-4.kit-item
-  //-         div.browser-slider-wrapper
-  //-           div.browser-circle.red
-  //-           div.browser-circle.yellow
-  //-           div.browser-circle.green
-  //-           div
-  //-             img.feature-image(src="public/images/test1.png")
-  //-     .columns
-  //-       .column.is-4.kit-item
-  //-         h2.title Active Bands
-  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-  //-       .column.is-4.kit-item
-  //-         h2.title Active Hub
-  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-  //-       .column.is-4.kit-item
-  //-         h2.title Active Portal
-  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-  //- //- Kit contents end
-
   //- Portal slider start
   section.section.feature.feature-background-right
     .container
@@ -147,15 +115,30 @@ block body
   //- ActiveBand hero start
   section.section.feature
     .container.has-text-centered
-      .columns
+      .columns.feature-header
         .column.is-12.is-vcentered
           h2.title Long lasting battery, invaluable insights.
           h3.subtitle.is-coral Sync your Active Band using the Active Hub
-    .container
-      .columns
-        .column.is-12-mobile.is-hidden-tablet.feature-image
-          img(src="public/images/activeband-front.png")
-        .column.is-12-mobile.is-5-tablet
+    .container.feature-body
+      .columns.is-centered.activeband-columns
+        //- .column.is-12-mobile.is-hidden-tablet.feature-image
+          //- img(src="public/images/activeband-front.png")
+        .column.is-2-tablet.activeband-slider-wrapper.order-1
+          div
+          .activeband-slider
+            div
+              img(src="public/images/carousel-screens/steps.png")
+            div
+              img(src="public/images/carousel-screens/avatar.png")
+            div
+              img(src="public/images/carousel-screens/water.png")
+            div
+              img(src="public/images/carousel-screens/sync.png")
+            div
+              img(src="public/images/carousel-screens/kids.png")
+            div
+              img(src="public/images/carousel-screens/battery.png")
+        .column.is-12-mobile.is-4-tablet.order-2
           .feature-descriptions.is-activeband
             .selector.active
               h3.activity-tracking 24 hr Activity
@@ -166,9 +149,8 @@ block body
             .selector
               h3.water-resistance Water Resistant
               p We love water, just not in our electronics. The Active Band has been engineered to keep water out and data safe.
-        .column.is-hidden-mobile.is-2-tablet
-          img(src="public/images/activeband-front.png")
-        .column.is-12-mobile.is-5-tablet
+        //- .column.is-hidden-mobile.is-2-tablet.activeband-slider-wrapper
+        .column.is-12-mobile.is-4-tablet
           .feature-descriptions.is-activeband
             .selector
               h3.bluetooth Wireless Syncing

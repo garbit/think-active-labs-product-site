@@ -185,6 +185,9 @@ body {
 }
 
 .feature {
+  .feature-header {
+    margin-bottom: 4rem;
+  }
   h2 {
     font-weight: 400;
     color: black;
@@ -392,6 +395,15 @@ body {
   }
 }
 
+.feature-body {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+}
+
 .kit-contents {
   .columns {
     align-items: baseline;
@@ -410,6 +422,45 @@ body {
   .kit-item > div > img {
     max-height: 25vh;
   }
+}
+
+.activeband-slider-wrapper {
+  background: url("../public/images/activeband-front.png") center center no-repeat;
+  background-size: 80% 80%;
+  background-size: contain;
+  position: relative;
+
+  .slick-slide img {
+    margin: auto;
+  }
+}
+
+@include mobile {
+  .activeband-slider-wrapper {
+    min-height: 300px;
+  }
+
+  .activeband-slider-wrapper > div {
+    margin-top: 65px;
+  }
+}
+
+@include tablet {
+  .activeband-slider-wrapper > div {
+    min-height: 50%;
+    margin-top: -25%;
+  }
+}
+
+.activeband-columns {
+  flex-direction: row-reverse;
+
+  // .column:nth-child(0) {
+  //   order: 2;
+  // }
+  // .column:nth-child(1) {
+  //   order: 1;
+  // }
 }
 
 // .feature-background-right ::after {
