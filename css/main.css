@@ -7018,6 +7018,21 @@ body {
   background-size: cover;
   background-color: #36023b; }
 
+.feature-tiles .columns {
+  align-items: stretch; }
+
+.feature-tiles .is-xlarge {
+  height: 4rem;
+  width: 4rem; }
+
+.feature-tiles p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 .our-core-values {
   display: flex; }
   @media screen and (max-width: 768px) {
@@ -7136,7 +7151,7 @@ body {
   .feature .feature-descriptions h3.activity-tracking::before {
     font-family: "Font Awesome 5 Free";
     content: "\f70c";
-    left: -1.25rem;
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
@@ -7145,7 +7160,7 @@ body {
   .feature .feature-descriptions h3.water-resistance::before {
     font-family: "Font Awesome 5 Free";
     content: "\f043";
-    left: -1.25rem;
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
@@ -7154,7 +7169,7 @@ body {
   .feature .feature-descriptions h3.battery-life::before {
     font-family: "Font Awesome 5 Free";
     content: "\f240";
-    left: -1.25rem;
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
@@ -7162,8 +7177,8 @@ body {
     position: absolute; }
   .feature .feature-descriptions h3.bluetooth::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f293";
-    left: -1.25rem;
+    content: "\f1eb";
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
@@ -7171,8 +7186,8 @@ body {
     position: absolute; }
   .feature .feature-descriptions h3.durable-strap::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f0c1";
-    left: -1.25rem;
+    content: "\f1ae";
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
@@ -7180,16 +7195,16 @@ body {
     position: absolute; }
   .feature .feature-descriptions h3.identity::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f6d3";
-    left: -1.25rem;
+    content: "\f505";
+    left: -1.45rem;
     font-weight: 900;
     font-style: normal;
     display: inline-block;
     text-decoration: inherit;
     position: absolute; }
 
-.kit-contents img {
-  max-height: 300px; }
+.kit-contents .kit-item > div {
+  height: 50%; }
 
 .kit-contents .kit-item {
   padding: 2rem; }

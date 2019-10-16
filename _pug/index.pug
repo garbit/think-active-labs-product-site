@@ -24,14 +24,12 @@ block body
   //- Hero header end
 
   //- Tagline start
-  section.section.tag-line
-    .container.has-text-centered
-      .columns
-        .column.is-8.is-offset-2
-          h1.title Empowering children to understand their health and wellbeing through data literacy
-          p Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-  //- Tagline end
+  //- section.section.tag-line
+  //-   .container.has-text-centered
+  //-     .columns
 
+  //- Tagline end
+  include components/feature-tiles
   //- Avatars Start
   section.section.feature.active-hub
     .container
@@ -55,65 +53,63 @@ block body
   //- Kit contents start
   section.section.feature.kit-contents
     .container.has-text-centered
-      .columns
-        .column.is-12.is-vcentered
-          h2.title What comes in the kit?
+      h2.title What comes in the kit?
     .container
       .columns.has-text-centered.is-vcentered
         .column.is-4.kit-item
-          img.feature-image(src="public/images/band-single.png")
+          div.feature-image
+            img(src="public/images/band-single.png")
+            figcaption
+              h2.title Active Bands
+              p A tracker like no other,  actually its pretty similar. Just with a water resistant design, durable strap, a fun avatar icon and a step counter. No biggie… oh and it lasts 14 days with 24/7 activity tracking 😎
         .column.is-4.kit-item
-          img.feature-image(src="public/images/avatars-activehub.png")
-        .column.is-4.kit-item
-          div.browser-slider-wrapper
-            div.browser-circle.red
-            div.browser-circle.yellow
-            div.browser-circle.green
-            div
-              img.feature-image(src="public/images/test1.png")
-      .columns
-        .column.is-4.kit-item
-          h2.title Active Bands
-          p A tracker like no other,  actually its pretty similar. Just with a water resistant design, durable strap, a fun avatar icon and a step counter. No biggie… oh and it lasts 14 days with 24/7 activity tracking 😎
-        .column.is-4.kit-item
+          div.feature-image
+            img(src="public/images/avatars-activehub.png")
           h2.title Active Hub
           p A focal point in the classroom for the children to congregate around. The ActiveHub lets the children answer health and nutritional questions, view their teams challenges and get motivated to be more active!
         .column.is-4.kit-item
+          div.feature-image
+            div.browser-slider-wrapper
+              div.browser-circle.red
+              div.browser-circle.yellow
+              div.browser-circle.green
+              div
+                img(src="public/images/test1.png")
           h2.title Active Portal
           p Our comprehensive kit management solution. This portal lets you set challenges, manage deployments and manage your equipment. Each deployment’s activity data is safely stored here to generate reports with our insights services.
   //- Kit contents end
 
 
   //- Kit contents start
-  section.section.feature.kit-contents
-    .container.has-text-centered
-      .columns
-        .column.is-12.is-vcentered
-          h2.title What comes in the kit?
-    .container
-      .columns.has-text-centered.is-vcentered
-        .column.is-4.kit-item
-          img.feature-image(src="public/images/band-single.png")
-        .column.is-4.kit-item
-          img.feature-image(src="public/images/avatars-activehub.png")
-        .column.is-4.kit-item
-          div.browser-slider-wrapper
-            div.browser-circle.red
-            div.browser-circle.yellow
-            div.browser-circle.green
-            div
-              img.feature-image(src="public/images/test1.png")
-      .columns
-        .column.is-4.kit-item
-          h2.title Active Bands
-          p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-        .column.is-4.kit-item
-          h2.title Active Hub
-          p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-        .column.is-4.kit-item
-          h2.title Active Portal
-          p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
-  //- Kit contents end
+  //- section.section.feature.kit-contents
+  //-   .container.has-text-centered
+  //-     .columns
+  //-       .column.is-12.is-vcentered
+  //-         h2.title What comes in the kit?
+  //-   .container
+  //-     .columns.has-text-centered.is-vcentered
+  //-       .column.is-4.kit-item
+  //-         img.feature-image(src="public/images/band-single.png")
+  //-       .column.is-4.kit-item
+  //-         img.feature-image(src="public/images/avatars-activehub.png")
+  //-       .column.is-4.kit-item
+  //-         div.browser-slider-wrapper
+  //-           div.browser-circle.red
+  //-           div.browser-circle.yellow
+  //-           div.browser-circle.green
+  //-           div
+  //-             img.feature-image(src="public/images/test1.png")
+  //-     .columns
+  //-       .column.is-4.kit-item
+  //-         h2.title Active Bands
+  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
+  //-       .column.is-4.kit-item
+  //-         h2.title Active Hub
+  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
+  //-       .column.is-4.kit-item
+  //-         h2.title Active Portal
+  //-         p Putting children’s health first, Think Active provides a fun and interactive means for children to learn more about their activity levels whilst improving data literacy in a safe and insightful environment.
+  //- //- Kit contents end
 
   //- Portal slider start
   section.section.feature.feature-background-right
@@ -163,11 +159,11 @@ block body
               h3.activity-tracking 24 hr Activity
               p We track activity, and only activity, all day and all night. Understand how to improve activity levels beyond the school day.
             .selector
+              h3.identity Privacy Protecting Avatars
+              p Our playful avatars provide the children with an anonymous means to participate. Easily identifiable for the child but private.
+            .selector
               h3.water-resistance Water Resistant
               p We love water, just not in our electronics. The Active Band has been engineered to keep water out and data safe.
-            .selector
-              h3.battery-life 14 Day Battery life*
-              p Five days wasn’t good enough for us, so we eked a whopping 14 days out of our ActiveBand. Let the children complete challenges, not chargers.
         .column.is-hidden-mobile.is-2-tablet
           img(src="public/images/activeband-front.png")
         .column.is-12-mobile.is-5-tablet
@@ -176,11 +172,11 @@ block body
               h3.bluetooth Wireless Syncing
               p No-wires, no docks, no waiting around. The ActiveHub silently and patiently syncs data from each band up to our secure servers.
             .selector
-              h3.durable-strap Durable Silicone strap
+              h3.durable-strap Made for kids
               p Designed to withstand even the most active of kids. Our straps are secure and comfortable.
             .selector
-              h3.identity Always on avatar
-              p Our playful avatars provide the children with an anonymous means to participate. Easily identifiable for the child but private.
+              h3.battery-life 14 Day Battery life*
+              p Five days wasn’t good enough for us, so we eked a whopping 14 days out of our ActiveBand. Let the children complete challenges, not chargers.
   //- ActiveBand hero end
 
   //- Core values (girl smiling) start

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-Artboard_5">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_5" data-name="Artboard – 5" clip-path="url(#clip-Artboard_5)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="Group_316" data-name="Group 316" transform="translate(11.445 30.672)">
+      <g id="Rectangle_163" data-name="Rectangle 163" transform="translate(-0.445 27.328)" fill="none" stroke="#022a39" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <rect width="17" height="36" stroke="none"/>
+        <rect x="2" y="2" width="13" height="32" fill="none"/>
+      </g>
+      <g id="Rectangle_164" data-name="Rectangle 164" transform="translate(23.555 0.328)" fill="none" stroke="#022a39" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <rect width="17" height="63" rx="3" stroke="none"/>
+        <rect x="2" y="2" width="13" height="59" rx="1" fill="none"/>
+      </g>
+      <g id="Rectangle_165" data-name="Rectangle 165" transform="translate(48.555 16.328)" fill="none" stroke="#022a39" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <rect width="16" height="47" stroke="none"/>
+        <rect x="2" y="2" width="12" height="43" fill="none"/>
+      </g>
+    </g>
+    <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(13 38)" fill="none" stroke="#022a39" stroke-width="3">
+      <ellipse cx="5" cy="5.5" rx="5" ry="5.5" stroke="none"/>
+      <ellipse cx="5" cy="5.5" rx="3.5" ry="4" fill="none"/>
+    </g>
+    <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(39 8)" fill="none" stroke="#022a39" stroke-width="3">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_80" data-name="Ellipse 80" transform="translate(62 23)" fill="none" stroke="#022a39" stroke-width="3">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_81" data-name="Ellipse 81" transform="translate(79 7)" fill="none" stroke="#022a39" stroke-width="3">
+      <ellipse cx="5.5" cy="5" rx="5.5" ry="5" stroke="none"/>
+      <ellipse cx="5.5" cy="5" rx="4" ry="3.5" fill="none"/>
+    </g>
+    <path id="Path_623" data-name="Path 623" d="M11889.315,963.8l21.959-25.429" transform="translate(-11869.08 -922.876)" fill="#707070" stroke="#022a39" stroke-width="3"/>
+    <path id="Path_624" data-name="Path 624" d="M11912.425,938.367,11928.7,949.5" transform="translate(-11864.419 -922.876)" fill="#707070" stroke="#022a39" stroke-width="3"/>
+    <path id="Path_625" data-name="Path 625" d="M11925.181,938.367l-12.755,12.113" transform="translate(-11843.212 -923.857)" fill="#707070" stroke="#022a39" stroke-width="3"/>
+  </g>
+</svg>

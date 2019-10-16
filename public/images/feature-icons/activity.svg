@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-Artboard_6">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_6" data-name="Artboard – 6" clip-path="url(#clip-Artboard_6)">
+    <rect width="100" height="100" fill="#fff"/>
+    <g id="Group_441" data-name="Group 441" transform="translate(-305 -1557.865)">
+      <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(306 1558.865)" fill="none" stroke="#022a39" stroke-width="4.5">
+        <ellipse cx="49" cy="49.5" rx="49" ry="49.5" stroke="none"/>
+        <ellipse cx="49" cy="49.5" rx="46.75" ry="47.25" fill="none"/>
+      </g>
+      <path id="Path_610" data-name="Path 610" d="M10680.294,957h72.963" transform="translate(-10397.999 651.386)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_611" data-name="Path 611" d="M0,0H72.962" transform="matrix(0.985, 0.174, -0.174, 0.985, 283.819, 1595.26)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_612" data-name="Path 612" d="M0,0,67.816,13.288" transform="matrix(0.985, 0.174, -0.174, 0.985, 291.195, 1583.067)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_613" data-name="Path 613" d="M0,1.489H76.387" transform="translate(300.723 1571.219) rotate(31)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_614" data-name="Path 614" d="M0,1.786H73.584" transform="matrix(0.755, 0.656, -0.656, 0.755, 311.256, 1562.109)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_615" data-name="Path 615" d="M0,0,65.12,14.535" transform="matrix(0.755, 0.656, -0.656, 0.755, 319.745, 1556.635)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Path_637" data-name="Path 637" d="M6.635-10.9l56.53,28.544" transform="matrix(0.755, 0.656, -0.656, 0.755, 319.745, 1556.635)" fill="none" stroke="#fff" stroke-width="4"/>
+      <path id="Icon_awesome-running" data-name="Icon awesome-running" d="M30.46,10.751a5.375,5.375,0,1,0-5.375-5.375A5.375,5.375,0,0,0,30.46,10.751Zm-17.729,24.8-1.657,3.866H3.584a3.584,3.584,0,1,0,0,7.167h8.673a5.364,5.364,0,0,0,4.94-3.258l.984-2.3-1.195-.706a10.664,10.664,0,0,1-4.254-4.772ZM43,25.084H38.072l-2.918-5.963a10.746,10.746,0,0,0-6.919-5.7l-7.96-2.367a10.705,10.705,0,0,0-9.053,1.919L6.78,16.374A3.583,3.583,0,0,0,11.14,22.06l4.445-3.406a3.487,3.487,0,0,1,2.83-.688l1.646.489-4.2,9.787a7.186,7.186,0,0,0,2.945,8.994l9.517,5.618L25.252,52.68a3.583,3.583,0,1,0,6.839,2.141L35.634,43.5a5.4,5.4,0,0,0-2.423-6.091l-6.858-4.047L29.859,24.6l2.27,4.64a5.409,5.409,0,0,0,4.828,3.011H43a3.583,3.583,0,1,0,0-7.166Z" transform="translate(331.712 1580.155)" fill="#022a39"/>
+    </g>
+  </g>
+</svg>
