@@ -73,15 +73,6 @@ block body
               p Our comprehensive kit management solution. This portal lets you set challenges, manage deployments and manage your equipment. Each deployment's activity data is safely stored here to generate reports with our insights services.
   //- Kit contents end
 
-  //- Core values (football) start
-  div.our-core-values
-    .value-image.football-match
-    .value-text
-      h2.title Happier and more Active.
-      h3.subtitle We have poured our passion for sport and education into Think Active. At is core is a focus on wellbeing, with a greater understanding of activity levels and how they affect our lives.
-  //- Core values (football) end
-
-
   //- Portal slider start
   section.section.feature.feature-background-right
     .container
@@ -116,15 +107,30 @@ block body
   //- ActiveBand hero start
   section.section.feature
     .container.has-text-centered
-      .columns
+      .columns.feature-header
         .column.is-12.is-vcentered
           h2.title Long lasting battery, invaluable insights.
           h3.subtitle.is-coral Sync your Active Band using the Active Hub
-    .container
-      .columns
-        .column.is-12-mobile.is-hidden-tablet.feature-image
-          img(src="public/images/activeband-front.png")
-        .column.is-12-mobile.is-5-tablet
+    .container.feature-body
+      .columns.is-centered.activeband-columns
+        //- .column.is-12-mobile.is-hidden-tablet.feature-image
+          //- img(src="public/images/activeband-front.png")
+        .column.is-2-tablet.activeband-slider-wrapper.order-1
+          div
+          .activeband-slider
+            div
+              img(src="public/images/carousel-screens/steps.png")
+            div
+              img(src="public/images/carousel-screens/avatar.png")
+            div
+              img(src="public/images/carousel-screens/water.png")
+            div
+              img(src="public/images/carousel-screens/sync.png")
+            div
+              img(src="public/images/carousel-screens/kids.png")
+            div
+              img(src="public/images/carousel-screens/battery.png")
+        .column.is-12-mobile.is-4-tablet.order-2
           .feature-descriptions.is-activeband
             .selector.active
               h3.activity-tracking 24 hr Activity
@@ -135,9 +141,8 @@ block body
             .selector
               h3.water-resistance Water Resistant
               p We love water, just not in our electronics. The Active Band has been engineered to keep water out and data safe.
-        .column.is-hidden-mobile.is-2-tablet
-          img(src="public/images/activeband-front.png")
-        .column.is-12-mobile.is-5-tablet
+        //- .column.is-hidden-mobile.is-2-tablet.activeband-slider-wrapper
+        .column.is-12-mobile.is-4-tablet
           .feature-descriptions.is-activeband
             .selector
               h3.bluetooth Wireless Syncing
