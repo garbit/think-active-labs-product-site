@@ -7076,6 +7076,9 @@ body {
 
 .active-hub {
   background: linear-gradient(-15deg, rgba(139, 139, 139, 0.3), white, white, white); }
+  @media screen and (max-width: 768px) {
+    .active-hub .feature-image {
+      max-height: 40vh; } }
 
 .browser-slider-wrapper {
   border: 12px solid #eee;
@@ -7203,10 +7206,15 @@ body {
     text-decoration: inherit;
     position: absolute; }
 
-.kit-contents .kit-item > div {
-  height: 50%; }
+.kit-contents .columns {
+  align-items: baseline; }
 
 .kit-contents .kit-item {
   padding: 2rem; }
   .kit-contents .kit-item h2, .kit-contents .kit-item p {
     text-align: left; }
+  .kit-contents .kit-item figcaption {
+    margin-top: 2rem; }
+
+.kit-contents .kit-item > div > img {
+  max-height: 25vh; }

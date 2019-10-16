@@ -215,6 +215,11 @@ body {
 .active-hub {
   // background: linear-gradient(-45deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1));
   background: linear-gradient(-15deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  @include mobile {
+    .feature-image {
+      max-height: 40vh;
+    }
+  }
 }
 
 .browser-slider-wrapper {
@@ -388,8 +393,8 @@ body {
 }
 
 .kit-contents {
-  .kit-item > div {
-    height: 50%;
+  .columns {
+    align-items: baseline;
   }
 
   .kit-item {
@@ -402,6 +407,13 @@ body {
       // padding: 0.5rem;
       // font-weight: normal;
     }
+    figcaption {
+      margin-top: 2rem;
+    }
+  }
+
+  .kit-item > div > img {
+    max-height: 25vh;
   }
 }
 
