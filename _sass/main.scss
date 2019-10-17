@@ -27,7 +27,7 @@ $family-sans-serif: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "R
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: #23D9D2;
+$primary: #00FFF5;
 $coral: #f83281;
 
 $navbar-item-color: $white;
@@ -55,6 +55,12 @@ section.section {
   }
 }
 
+h1.title > span {
+  background-color: $primary;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+  margin-left: -0.5rem;
+}
 
 
 .is-coral {
@@ -403,6 +409,46 @@ section.section {
       text-decoration: inherit;
       position: absolute;
     }
+
+    // Active Hub
+    h3.syncing::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f085";
+      left: -1.45rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.teams::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c0";
+      left: -1.45rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+
+    h3.private::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f023";
+      left: -1.45rem;
+      font-weight: 900;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      position: absolute;
+    }
+  }
+}
+
+.activeband {
+  .columns {
+    flex-direction: row-reverse;
   }
 }
 
@@ -435,49 +481,20 @@ section.section {
   }
 }
 
-.activeband-slider-wrapper {
-  background: url("../public/images/activeband-front.png") center center no-repeat;
-  background-size: 80% 80%;
-  background-size: contain;
-  position: relative;
-
-  .slick-slide img {
-    margin: auto;
-  }
-}
-
-@include mobile {
-  .activeband-slider-wrapper {
-    min-height: 300px;
-  }
-
-  .activeband-slider-wrapper > div {
-    margin-top: 65px;
-  }
-}
-
-@include tablet {
-  .activeband-slider-wrapper > div {
-    min-height: 50%;
-    margin-top: -25%;
-  }
-}
-
-.activeband-columns {
-  flex-direction: row-reverse;
-
-  // .column:nth-child(0) {
-  //   order: 2;
-  // }
-  // .column:nth-child(1) {
-  //   order: 1;
-  // }
-}
-
 .think-active-benefits {
   background-color: #022A39;
   h1, h2, h3, h4, h5, p {
     color: #FFFFFF;
+  }
+
+  h3.title {
+    color: #022A39;
+    > span {
+      background-color: $primary;
+      padding: 1rem 0.5rem;
+      display: inline-block;
+      margin-left: -0.5rem;
+    }
   }
 
   .sub-heading {

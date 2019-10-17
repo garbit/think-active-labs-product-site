@@ -35,7 +35,8 @@ block body
     .container
       .columns.is-vcentered
         .column.is-5
-          h2.title Developing Healthier Lifestyles.
+          h1.title
+            span Developing Healthier Lifestyles.
           p Think Active provides a fun and interactive means for children to learn more about their activity levels. We put children’s health first, improving data literacy in a safe and secure environment.
         .column.is-6.is-offset-1.has-text-centered
           img.feature-image(src="public/images/avatars-activehub.png")
@@ -46,18 +47,20 @@ block body
     .container.has-text-centered
       h2.title What comes in the kit?
     .container
-      .columns.has-text-centered
+      .columns
         .column.is-4.kit-item
           div
             img(src="public/images/band-single.png")
             figcaption
-              h2.title Active Bands
+              h1.title
+                span Active Bands
               p A tracker like no other,  actually its pretty similar. Just with a water resistant design, durable strap, a fun avatar icon and a step counter. No biggie... oh and it lasts 14 days with 24/7 activity tracking.
         .column.is-4.kit-item
           div
             img(src="public/images/avatars-activehub.png")
             figcaption
-              h2.title Active Hub
+              h1.title
+                span Active Hub
               p A focal point in the classroom for the children to congregate around. The ActiveHub lets the children answer health and nutritional questions, view their teams challenges and get motivated to be more active!
         .column.is-4.kit-item
           div
@@ -68,7 +71,8 @@ block body
               div
                 img(src="public/images/test1.png")
             figcaption
-              h2.title Active Portal
+              h1.title
+                span Active Portal
               p Our comprehensive kit management solution. This portal lets you set challenges, manage deployments and manage your equipment. Each deployment's activity data is safely stored here to generate reports with our insights services.
   //- Kit contents end
 
@@ -81,52 +85,30 @@ block body
   //- Core values (football) end
 
   //- ActiveBand hero start
-  section.section.feature
-    .container.has-text-centered
-      .columns.feature-header
-        .column.is-12.is-vcentered
-          h2.title Long lasting battery, invaluable insights.
-          h3.subtitle.is-coral Sync your Active Band using the Active Hub
-    .container.feature-body
-      .columns.is-centered.activeband-columns
-        //- .column.is-12-mobile.is-hidden-tablet.feature-image
-          //- img(src="public/images/activeband-front.png")
-        .column.is-2-tablet.activeband-slider-wrapper.order-1
-          div
-          .activeband-slider
-            div
-              img(src="public/images/carousel-screens/steps.png")
-            div
-              img(src="public/images/carousel-screens/avatar.png")
-            div
-              img(src="public/images/carousel-screens/water.png")
-            div
-              img(src="public/images/carousel-screens/sync.png")
-            div
-              img(src="public/images/carousel-screens/kids.png")
-            div
-              img(src="public/images/carousel-screens/battery.png")
-        .column.is-12-mobile.is-4-tablet.order-2
+  section.section.feature.activeband
+    .container
+      .columns.is-multiline
+        .column.is-12
+          h1.title
+            span Active Band
+        .column.is-6.order-2
+          div(style="max-width: 1920px; max-height: 1080px;")
+            div(style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%; overflow: hidden;")
+              iframe(src="band_XR.65.html" allowfullscreen style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;" frameborder="0" scrolling="no")
+        .column.is-3.order-1
           .feature-descriptions.is-activeband
-            .selector.active
               h3.activity-tracking 24 hr Activity
               p We track activity, and only activity, all day and all night. Understand how to improve activity levels beyond the school day.
-            .selector
               h3.identity Privacy Protecting Avatars
               p Our playful avatars provide the children with an anonymous means to participate. Easily identifiable for the child but private.
-            .selector
               h3.water-resistance Water Resistant
               p We love water, just not in our electronics. The Active Band has been engineered to keep water out and data safe.
-        //- .column.is-hidden-mobile.is-2-tablet.activeband-slider-wrapper
-        .column.is-12-mobile.is-4-tablet
+        .column.is-3
           .feature-descriptions.is-activeband
-            .selector
               h3.bluetooth Wireless Syncing
               p No-wires, no docks, no waiting around. The ActiveHub silently and patiently syncs data from each band up to our secure servers.
-            .selector
               h3.durable-strap Made for kids
               p Designed to withstand even the most active of kids. Our straps are secure and comfortable.
-            .selector
               h3.battery-life 14 Day Battery life*
               p Five days wasn't good enough for us, so we eked a whopping 14 days out of our ActiveBand. Let the children complete challenges, not chargers.
   //- ActiveBand hero end
@@ -144,8 +126,19 @@ block body
     .container
       .columns.is-vcentered
         .column.is-5
-          h2.title Developing Healthier Lifestyles.
-          p Think Active provides a fun and interactive means for children to learn more about their activity levels. We put children’s health first, improving data literacy in a safe and secure environment.
+          h1.title
+            span Active Hub
+          h2.subtitle At home in the classroom
+          .feature-descriptions
+            .selector
+              h3.syncing Distraction Free Syncing
+              p Active Hub syncs in the background, no sync pads. Children can view their data on the Hub when they feel comfortable in groups or by themselves.
+            .selector
+              h3.teams Teams
+              p Re-energise the classroom with a bit a friendly competition. Red vs Blue,  Mr. Archer’s class vs Mrs. Briggs’ or year 3 vs year 4. Let the kids track their progress on the Active Hub and smash their goals.
+            .selector
+              h3.private Personal & Private
+              p The Active Band acts as a password to each child’s data. Only they can view their data with a tough to confirm the action on their personal band.
         .column.is-6.is-offset-1.has-text-centered
           img.feature-image(src="public/images/avatars-activehub.png")
   //- Active Hub end
@@ -163,8 +156,9 @@ block body
     .container
       .columns.is-vcentered
         .column.is-4
-          h2.title Easy to deploy, manage and scale.
-          h3.subtitle.is-coral Active Portal
+          h1.title
+            span Active Portal
+          h3.subtitle Who Said
           .feature-descriptions.is-portal
             .selector.active
               h3.management-at-scale Management at Scale
@@ -198,7 +192,8 @@ block body
     .container
       .columns
         .column.is-4
-          h3.title For Children
+          h3.title
+            span For Children
           h3.sub-heading Healthier & Happier
           p Through greater understanding of their activity levels we aim to provide healthier lifestyles and happier children
           h3.sub-heading Team Challenges
@@ -206,7 +201,8 @@ block body
           h3.sub-heading Data Literacy
           p Learn about statistics and scientific analysis in a more engaging environment with personal data literacy materials.
         .column.is-4
-          h3.title For Teachers
+          h3.title
+            span For Teachers
           h3.sub-heading Minimal Distraction
           p Syncing of data is performed wirelessly in the background. No distractions means more time for you.
           h3.sub-heading New Teaching Materials
@@ -214,7 +210,8 @@ block body
           h3.sub-heading Privacy Centric
           p Rest easy knowing that no identifiable data is stored by Think Active.
         .column.is-4
-          h3.title For Organisations
+          h3.title
+            span For Organisations
           h3.sub-heading Access Funding
           p Our unrivalled insights services provide you with the impact assessment materials you need to win funding opportunities.
           h3.sub-heading Manage Deployments
