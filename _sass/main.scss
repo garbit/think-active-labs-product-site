@@ -46,6 +46,17 @@ body {
   flex: 1;
 }
 
+section.section {
+  @include tablet {
+    padding: 8rem 6rem;
+  }
+  @include mobile {
+    padding: 6rem 3rem;
+  }
+}
+
+
+
 .is-coral {
   color: $coral;
 }
@@ -461,6 +472,18 @@ body {
   // .column:nth-child(1) {
   //   order: 1;
   // }
+}
+
+.think-active-benefits {
+  background-color: #022A39;
+  h1, h2, h3, h4, h5, p {
+    color: #FFFFFF;
+  }
+
+  .sub-heading {
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
 }
 
 // .feature-background-right ::after {

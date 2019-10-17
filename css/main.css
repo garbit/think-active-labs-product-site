@@ -6964,6 +6964,14 @@ body {
 .page-content {
   flex: 1; }
 
+@media screen and (min-width: 769px), print {
+  section.section {
+    padding: 8rem 6rem; } }
+
+@media screen and (max-width: 768px) {
+  section.section {
+    padding: 6rem 3rem; } }
+
 .is-coral {
   color: #f83281; }
 
@@ -7249,3 +7257,11 @@ body {
 
 .activeband-columns {
   flex-direction: row-reverse; }
+
+.think-active-benefits {
+  background-color: #022A39; }
+  .think-active-benefits h1, .think-active-benefits h2, .think-active-benefits h3, .think-active-benefits h4, .think-active-benefits h5, .think-active-benefits p {
+    color: #FFFFFF; }
+  .think-active-benefits .sub-heading {
+    font-weight: 600;
+    margin-top: 1.5rem; }
