@@ -3,30 +3,21 @@ extends layout.pug
 block body
   include components/hero-full-height.pug
   //- Hero Header start
-  div.hero-wrapper
-    div.hero-angles
-      div.hero-stripes
-    section.section.hero.is-medium
+  .hero-wrapper
+    .new-hero-stripes-wrapper
+      .new-hero-stripes
+    section.hero
       .hero-body
         .container
           .columns
-            .column.is-8
-              h1.title.is-size-1.is-spaced.has-text-white.has-text-weight-bold Think Active. Be Active.
-              h2.subtitle.has-text-white The classroom based activity tracking solution for children 7+ and above.
-              a.button.is-primary Pre-order now
-
-  section.section.hero-image-wrapper
-    .container
-      .columns
-        .column.is-offset-8.is-4.is-offset-3-mobile.is-6-mobile
-          .hero-image
-            img(src="public/images/band-single.png")
+            .column.is-7
+              img(src="public/images/activebands-falling.png")
+            .column.is-5.header-text
+              h1.title
+                span Be Active.
+                span Think Active.
+              h2.subtitle.is-size-4 The classroom based activity tracking solution for children 7+ and above.
   //- Hero header end
-
-  //- Tagline start
-  //- section.section.tag-line
-  //-   .container.has-text-centered
-  //-     .columns
 
   //- Tagline end
   include components/feature-tiles
@@ -36,7 +27,8 @@ block body
       .columns.is-vcentered
         .column.is-5
           h1.title
-            span Developing Healthier Lifestyles.
+            span Developing
+            span Healthier Lifestyles.
           p Think Active provides a fun and interactive means for children to learn more about their activity levels. We put children’s health first, improving data literacy in a safe and secure environment.
         .column.is-6.is-offset-1.has-text-centered
           img.feature-image(src="public/images/avatars-activehub.png")
@@ -50,14 +42,14 @@ block body
       .columns
         .column.is-4.kit-item
           div
-            img(src="public/images/band-single.png")
+            img.centered(src="public/images/band-single.png")
             figcaption
               h1.title
                 span Active Bands
               p A tracker like no other,  actually its pretty similar. Just with a water resistant design, durable strap, a fun avatar icon and a step counter. No biggie... oh and it lasts 14 days with 24/7 activity tracking.
         .column.is-4.kit-item
           div
-            img(src="public/images/avatars-activehub.png")
+            img.centered(src="public/images/avatars-activehub.png")
             figcaption
               h1.title
                 span Active Hub
@@ -92,9 +84,10 @@ block body
           h1.title
             span Active Band
         .column.is-6.order-2
-          div(style="max-width: 1920px; max-height: 1080px;")
-            div(style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%; overflow: hidden;")
-              iframe(src="band_XR.65.html" allowfullscreen style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;" frameborder="0" scrolling="no")
+          div.active-band-container
+            div
+              iframe(src="band_XR.65.html" allowfullscreen frameborder="0" scrolling="no")
+              img(src="public/images/360-icon.png")
         .column.is-3.order-1
           .feature-descriptions.is-activeband
               h3.activity-tracking 24 hr Activity

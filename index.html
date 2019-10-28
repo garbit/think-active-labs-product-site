@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="public/images/favicon.png">
+    <link rel="apple-touch-icon" href="public/images/favicon.png">
   </head>
   <body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="container">
-        <div class="navbar-brand"><a class="navbar-item" href="./index.html"><img src="public/images/nav-logo-white.png"></a><a class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="mobile-navbar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+        <div class="navbar-brand"><a class="navbar-item" href="./index.html"><img src="public/images/nav-logo-black.png"></a><a class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="mobile-navbar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
         <div class="navbar-menu has-text-centered" id="mobile-navbar">
           <div class="navbar-start"><a class="navbar-item" href="index.html">Home</a><a class="navbar-item">About</a><a class="navbar-item" href="contact.html">Contact</a></div>
           <div class="navbar-end"><a class="navbar-item">Link</a><a class="navbar-item">Link</a></div>
@@ -23,31 +25,23 @@
     </nav>
     <div class="page-content">
       <div class="hero-wrapper">
-        <div class="hero-angles">
-          <div class="hero-stripes"></div>
+        <div class="new-hero-stripes-wrapper">
+          <div class="new-hero-stripes"></div>
         </div>
-        <section class="section hero is-medium">
+        <section class="hero">
           <div class="hero-body">
             <div class="container">
               <div class="columns">
-                <div class="column is-8">
-                  <h1 class="title is-size-1 is-spaced has-text-white has-text-weight-bold">Think Active. Be Active.</h1>
-                  <h2 class="subtitle has-text-white">The classroom based activity tracking solution for children 7+ and above.</h2><a class="button is-primary">Pre-order now</a>
+                <div class="column is-7"><img src="public/images/activebands-falling.png"></div>
+                <div class="column is-5 header-text">
+                  <h1 class="title"><span>Be Active.</span><span>Think Active.</span></h1>
+                  <h2 class="subtitle is-size-4">The classroom based activity tracking solution for children 7+ and above.</h2>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <section class="section hero-image-wrapper">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-offset-8 is-4 is-offset-3-mobile is-6-mobile">
-              <div class="hero-image"><img src="public/images/band-single.png"></div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section feature-tiles">
         <div class="container has-text-centered">
           <div class="columns">
@@ -79,7 +73,7 @@
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column is-5">
-              <h1 class="title"><span>Developing Healthier Lifestyles.</span></h1>
+              <h1 class="title"><span>Developing</span><span>Healthier Lifestyles.</span></h1>
               <p>Think Active provides a fun and interactive means for children to learn more about their activity levels. We put children’s health first, improving data literacy in a safe and secure environment.</p>
             </div>
             <div class="column is-6 is-offset-1 has-text-centered"><img class="feature-image" src="public/images/avatars-activehub.png"></div>
@@ -93,7 +87,7 @@
         <div class="container">
           <div class="columns">
             <div class="column is-4 kit-item">
-              <div><img src="public/images/band-single.png">
+              <div><img class="centered" src="public/images/band-single.png">
                 <figcaption>
                   <h1 class="title"><span>Active Bands</span></h1>
                   <p>A tracker like no other,  actually its pretty similar. Just with a water resistant design, durable strap, a fun avatar icon and a step counter. No biggie... oh and it lasts 14 days with 24/7 activity tracking.</p>
@@ -101,7 +95,7 @@
               </div>
             </div>
             <div class="column is-4 kit-item">
-              <div><img src="public/images/avatars-activehub.png">
+              <div><img class="centered" src="public/images/avatars-activehub.png">
                 <figcaption>
                   <h1 class="title"><span>Active Hub</span></h1>
                   <p>A focal point in the classroom for the children to congregate around. The ActiveHub lets the children answer health and nutritional questions, view their teams challenges and get motivated to be more active!</p>
@@ -139,9 +133,9 @@
               <h1 class="title"><span>Active Band</span></h1>
             </div>
             <div class="column is-6 order-2">
-              <div style="max-width: 1920px; max-height: 1080px;">
-                <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%; overflow: hidden;">
-                  <iframe src="band_XR.65.html" allowfullscreen style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;" frameborder="0" scrolling="no"></iframe>
+              <div class="active-band-container">
+                <div>
+                  <iframe src="band_XR.65.html" allowfullscreen frameborder="0" scrolling="no"></iframe><img src="public/images/360-icon.png">
                 </div>
               </div>
             </div>
@@ -278,15 +272,10 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
-      <div class="footer-content"></div>
-      <div class="columns">
-        <div class="column">
-          <h3>Subscribe here to keep updated on all things active!</h3>
-        </div>
-        <div class="column">
-          <h3>© Think Active Labs Ltd.</h3>
-        </div>
+    <footer class="footer has-text-centered">
+      <div class="footer-content">
+        <h3>Copyright © 2019 Think Active Labs Ltd.  The Core, Bath Lane, Newcastle Helix, Newcastle upon Tyne, NE4 5TF.</h3>
+        <h3>Registered in England No. 11877453.</h3>
       </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

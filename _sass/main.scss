@@ -16,6 +16,7 @@
 // $pink-invert: #fff;
 // Update the sans-serif font family
 $TAL-purple: #36023b;
+$TAL-dark: #022A39;
 // $family-sans-serif: "Helvetica", "Arial", sans-serif;
 
 // TAL colour palette
@@ -78,7 +79,7 @@ h1.title > span {
 
 @include desktop {
   #mobile-navbar a.navbar-item {
-    color: white;
+    color: $TAL-dark;
   }
 
   #mobile-navbar a.navbar-item:hover {
@@ -96,10 +97,6 @@ h1.title > span {
   }
 }
 
-// .tag-line {
-//   margin-top:-8%;
-// }
-
 .hero-image-wrapper {
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
@@ -114,31 +111,66 @@ h1.title > span {
 
 .hero-wrapper {
   position: relative;
-  margin-top: -$navbar-height;
+  // margin-top: -$navbar-height;
+  // padding-top: $navbar-height;
+  h1.title, h2.subtitle {
+    color: $TAL-dark;
+  }
+  .header-text {
+    padding-top: 15vh;
+    h1.title > span {
+      padding: 0.5rem;
+      font-size: 4rem;
+      white-space: nowrap;
+    }
+    h2.subtitle {
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.5);
+      margin-top: 0.25rem
+    }
+  }
 }
 
-.hero-angles {
-  width: 100%;
+.new-hero-stripes-wrapper {
   height: 100%;
-  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  margin-top: -$navbar-height;
   transform: skewY(-7deg);
   transform-origin: 0;
-  position: absolute;
-  box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
-  background: $TAL-purple;
+  border-bottom: 15px solid $primary;
+  .new-hero-stripes {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background: url("../public/images/hero-stripes.png") no-repeat center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-.hero-stripes {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url("../public/images/hero-stripes.png") no-repeat center center fixed;
-  // margin-top: -$navbar-height;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $hero-background;
-}
+// .hero-angles {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   transform: skewY(-7deg);
+//   transform-origin: 0;
+//   position: absolute;
+//   box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
+//   border-bottom: 15px solid $primary;
+// }
+
+// .hero-stripes {
+//   height: 100%;
+//   width: 100%;
+//   position: relative;
+//   background: url("../public/images/hero-stripes.png") no-repeat center center fixed;
+//   // margin-top: -$navbar-height;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 .feature-tiles {
   .columns {
@@ -450,6 +482,42 @@ h1.title > span {
   .columns {
     flex-direction: row-reverse;
   }
+
+  .active-band-container {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    @include mobile {
+      div {
+        left: 0px; width: 100%; height: 0px; position: relative; min-height: 570px; overflow: hidden;
+      }
+    }
+    @include tablet {
+      div {
+        left: 0px; width: 100%; height: 0px; position: relative; min-height: 570px; overflow: hidden;
+      }
+    }
+
+    img {
+      z-index: 2;
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      top: 90%;
+      max-width: 3rem;
+    }
+
+    iframe {
+      position: absolute;
+      left: 0px;
+      height: 100%;
+      width: 1px;
+      min-width: 100%;
+      *width: 100%;
+    }
+  }
 }
 
 .feature-body {
@@ -474,6 +542,12 @@ h1.title > span {
     figcaption {
       margin-top: 2rem;
     }
+    @include mobile {
+      .centered {
+        margin: 0 auto;
+        display: block;
+      }
+    }
   }
 
   .kit-item > div > img {
@@ -482,7 +556,7 @@ h1.title > span {
 }
 
 .think-active-benefits {
-  background-color: #022A39;
+  background-color: $TAL-dark;
   h1, h2, h3, h4, h5, p {
     color: #FFFFFF;
   }
@@ -503,6 +577,9 @@ h1.title > span {
   }
 }
 
+.footer {
+  // background-color: #022A39;
+}
 // .feature-background-right ::after {
 //     content: '';
 //     width: 100%;
