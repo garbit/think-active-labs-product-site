@@ -7322,7 +7322,8 @@ h1.title > span {
   max-height: 25vh; }
 
 .think-active-benefits {
-  background-color: #022A39; }
+  background-color: #022A39;
+  padding-bottom: 300px !important; }
   .think-active-benefits h1, .think-active-benefits h2, .think-active-benefits h3, .think-active-benefits h4, .think-active-benefits h5, .think-active-benefits p {
     color: #FFFFFF; }
   .think-active-benefits h3.title {
@@ -7335,3 +7336,30 @@ h1.title > span {
   .think-active-benefits .sub-heading {
     font-weight: 600;
     margin-top: 1.5rem; }
+
+.subscribe {
+  position: relative; }
+  .subscribe input {
+    background-color: #00FFF5;
+    color: #022A39;
+    border-color: #36023b; }
+
+.subscribe-stripe-wrapper {
+  position: relative;
+  background-color: #00FFF5; }
+  .subscribe-stripe-wrapper .subscribe-stripe {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    transform: skewY(3deg);
+    transform-origin: 0;
+    border-bottom: 15px solid #00FFF5;
+    background-color: #00FFF5; }
+
+footer {
+  color: white;
+  z-index: 2; }
+
+.footer {
+  background-color: #022A39; }

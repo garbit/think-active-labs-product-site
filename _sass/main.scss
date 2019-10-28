@@ -557,6 +557,7 @@ h1.title > span {
 
 .think-active-benefits {
   background-color: $TAL-dark;
+  padding-bottom: 300px !important;
   h1, h2, h3, h4, h5, p {
     color: #FFFFFF;
   }
@@ -577,8 +578,37 @@ h1.title > span {
   }
 }
 
+.subscribe {
+  position: relative;
+  input {
+    background-color: $primary;
+    color: $TAL-dark;
+    border-color: $TAL-purple;
+  }
+}
+
+.subscribe-stripe-wrapper {
+  position: relative;
+  background-color: $primary;
+  .subscribe-stripe {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    transform: skewY(3deg);
+    transform-origin: 0;
+    border-bottom: 15px solid $primary;
+    background-color: $primary;
+  }
+}
+
+footer {
+  color: white;
+  z-index: 2;
+}
+
 .footer {
-  // background-color: #022A39;
+  background-color: $TAL-dark;
 }
 // .feature-background-right ::after {
 //     content: '';
