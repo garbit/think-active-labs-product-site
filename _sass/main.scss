@@ -37,6 +37,10 @@ $navbar-item-color: $white;
 
 @import "../node_modules/bulma/bulma";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   display: flex;
