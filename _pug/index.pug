@@ -20,33 +20,7 @@ block body
   //- Hero header end
 
   //- Key Features start
-  section.section.feature-tiles
-  .container.has-text-centered
-    .columns
-      .column.is-8.is-offset-2
-          h2.is-coral KEY FEATURES
-          h1.title Empowering children to understand their health and wellbeing through data literacy
-    .columns.is-multiline.is-mobile
-      .column.is-one-third-mobile.is-2-tablet.is-offset-1-tablet
-        span.icon.is-xlarge
-          img(src="public/images/feature-icons/activity.svg")
-        p Activity tracking & well-being
-      .column.is-one-third-mobile.is-2-tablet
-        span.icon.is-xlarge
-          img(src="public/images/feature-icons/hub.svg")
-        p Interactive Classroom Hub
-      .column.is-one-third-mobile.is-2-tablet
-        span.icon.is-xlarge
-          img(src="public/images/feature-icons/avatar.svg")
-        p Privacy Protecting Avatars
-      .column.is-one-half-mobile.is-2-tablet
-        span.icon.is-xlarge
-          img(src="public/images/feature-icons/challenge.svg")
-        p Classroom Challenges
-      .column.is-one-half-mobile.is-2-tablet
-        span.icon.is-xlarge
-          img(src="public/images/feature-icons/data.svg")
-        p Data insights & reporting
+  include components/feature-tiles.pug
   //- Key Features end
 
   //- Avatars Start
@@ -98,7 +72,7 @@ block body
 
   //- Core values (football) start
   div.our-core-values
-    .value-image.football-match
+    .value-image.designed-for-children
     .value-text
       h2.title Designed for Children
       h3.subtitle Our playful and interactive kit encourages kids hit the next level together. Through building a relationship between a child and their activity data we believe we can effect change.
@@ -156,7 +130,7 @@ block body
               h3.teams Teams
               p Re-energise the classroom with a bit a friendly competition. Red vs Blue,  Mr. Archer’s class vs Mrs. Briggs’ or year 3 vs year 4. Let the kids track their progress on the Active Hub and smash their goals.
               h3.private Personal & Private
-              p The Active Band acts as a password to each child’s data. Only they can view their data with a tough to confirm the action on their personal band.
+              p The Active Band acts as a password to each child’s data. Only they can view their data whilst their Active Band is in range using a tap to confirm the action on their personal band.
         .column.is-6.is-offset-1.has-text-centered
           img.feature-image(src="public/images/avatars-activehub.png")
   //- Active Hub end
@@ -234,7 +208,7 @@ block body
           p Our unrivalled insights services provide you with the impact assessment materials you need to win funding opportunities.
           h3.sub-heading Manage Deployments
           p Our unique Think Active Portal provides a means to orchestrate multiple deployments. Collating data from across your organisation.
-          h3.sub-heading Stand out from the Rest
+          h3.sub-heading Stand Out From the Rest
           p Think Active is a truly unique proposition. Providing an engaging environment for kids to be more active. Included in your programs you stand above the rest.
   //- Why Think Active? end
 

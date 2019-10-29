@@ -208,8 +208,17 @@ h1.title > span {
   }
 
   @include tablet {
-    .value-image.learning-in-school {
+    .value-image.designed-for-children {
       background: url("../public/images/learning-in-school.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: none;
+      width: 50%;
+    }
+
+    .value-image.learning-in-school {
+      background: url("../public/images/designed-for-children.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
