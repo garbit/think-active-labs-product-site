@@ -109,19 +109,76 @@ h1.title > span {
   }
 }
 
-.hero-wrapper {
+
+.new-header-wrapper {
+  min-height: 600px;
   position: relative;
-  // margin-top: -$navbar-height;
-  // padding-top: $navbar-height;
+
+  .new-header {
+    height: 100%;
+    background: url("../public/images/hero-stripes.png") no-repeat center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   h1.title, h2.subtitle {
     color: $TAL-dark;
   }
   .header-text {
-    padding-top: 15vh;
+    margin-top: 15%;
     h1.title > span {
       padding: 0.5rem;
       font-size: 4rem;
       @include desktop {
+        white-space: nowrap;
+      }
+    }
+    h2.subtitle {
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.5);
+      margin-top: 0.25rem
+    }
+  }
+}
+
+.new-header::after {
+  content:"";
+  position: absolute;
+  border-top: 15px solid #1C736F;
+  width: 100%;
+  transform: rotate(-7deg);
+  transform-origin: 0% 0%;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-wrapper {
+  position: relative;
+
+  .columns {
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  h1.title, h2.subtitle {
+    color: $TAL-dark;
+  }
+  .header-text {
+    padding-top: 10vh;
+    h1.title > span {
+      padding: 0.5rem;
+      display: table;
+
+      @include mobile {
+        font-size: 3rem;
+        white-space: nowrap;
+        line-height: 1;
+      }
+      @include desktop {
+        font-size: 4rem;
         white-space: nowrap;
       }
     }
@@ -144,7 +201,7 @@ h1.title > span {
   .new-hero-stripes {
     position: relative;
     height: 100%;
-    width: 80%;
+    width: 100%;
     background: url("../public/images/hero-stripes.png") no-repeat center center;
     background-position: center;
     background-repeat: no-repeat;

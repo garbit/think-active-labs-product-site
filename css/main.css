@@ -7008,17 +7008,61 @@ h1.title > span {
   background-color: transparent;
   background-image: none; }
 
-.hero-wrapper {
+.new-header-wrapper {
+  min-height: 600px;
   position: relative; }
-  .hero-wrapper h1.title, .hero-wrapper h2.subtitle {
+  .new-header-wrapper .new-header {
+    height: 100%;
+    background: url("../public/images/hero-stripes.png") no-repeat center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .new-header-wrapper h1.title, .new-header-wrapper h2.subtitle {
     color: #022A39; }
-  .hero-wrapper .header-text {
-    padding-top: 15vh; }
-    .hero-wrapper .header-text h1.title > span {
+  .new-header-wrapper .header-text {
+    margin-top: 15%; }
+    .new-header-wrapper .header-text h1.title > span {
       padding: 0.5rem;
       font-size: 4rem; }
       @media screen and (min-width: 1024px) {
+        .new-header-wrapper .header-text h1.title > span {
+          white-space: nowrap; } }
+    .new-header-wrapper .header-text h2.subtitle {
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.5);
+      margin-top: 0.25rem; }
+
+.new-header::after {
+  content: "";
+  position: absolute;
+  border-top: 15px solid #1C736F;
+  width: 100%;
+  transform: rotate(-7deg);
+  transform-origin: 0% 0%;
+  bottom: 0;
+  left: 0; }
+
+.hero-wrapper {
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .hero-wrapper .columns {
+      display: flex;
+      flex-direction: column-reverse; } }
+  .hero-wrapper h1.title, .hero-wrapper h2.subtitle {
+    color: #022A39; }
+  .hero-wrapper .header-text {
+    padding-top: 10vh; }
+    .hero-wrapper .header-text h1.title > span {
+      padding: 0.5rem;
+      display: table; }
+      @media screen and (max-width: 768px) {
         .hero-wrapper .header-text h1.title > span {
+          font-size: 3rem;
+          white-space: nowrap;
+          line-height: 1; } }
+      @media screen and (min-width: 1024px) {
+        .hero-wrapper .header-text h1.title > span {
+          font-size: 4rem;
           white-space: nowrap; } }
     .hero-wrapper .header-text h2.subtitle {
       padding: 0.5rem;
@@ -7036,7 +7080,7 @@ h1.title > span {
   .new-hero-stripes-wrapper .new-hero-stripes {
     position: relative;
     height: 100%;
-    width: 80%;
+    width: 100%;
     background: url("../public/images/hero-stripes.png") no-repeat center center;
     background-position: center;
     background-repeat: no-repeat;
