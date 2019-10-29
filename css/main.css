@@ -6962,7 +6962,11 @@ body {
   flex-direction: column; }
 
 .page-content {
-  flex: 1; }
+  flex: 1;
+  margin-top: 3.2rem; }
+
+a.inline-nav {
+  padding-top: 8rem; }
 
 @media screen and (min-width: 769px), print {
   section.section {
