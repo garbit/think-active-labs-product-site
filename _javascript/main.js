@@ -36,7 +36,7 @@ $(document).ready(function(){
 
   $('.navbar-item').click(function() {
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    if ($navbarBurgers.length > 0) {
+    if ($navbarBurgers.length > 0 && $(".navbar-burger").hasClass('is-active')) {
       $(".navbar-burger").toggleClass("is-active");
       $(".navbar-menu").toggleClass("is-active");
     }
