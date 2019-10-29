@@ -61,6 +61,7 @@ h1.title > span {
   padding: 1rem 0.5rem;
   display: inline-block;
   margin-left: -0.5rem;
+  white-space: nowrap;
 }
 
 
@@ -175,7 +176,7 @@ h1.title > span {
       @include mobile {
         font-size: 3rem;
         white-space: nowrap;
-        line-height: 1;
+        line-height: 1r;
       }
       @include desktop {
         font-size: 4rem;
@@ -240,12 +241,12 @@ h1.title > span {
     width: 4rem;
   }
   p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    // word-wrap: break-word;
+    // overflow-wrap: break-word;
+    // -webkit-hyphens: auto;
+    // -moz-hyphens: auto;
+    // -ms-hyphens: auto;
+    // hyphens: auto;
   }
 }
 

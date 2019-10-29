@@ -6976,7 +6976,8 @@ h1.title > span {
   background-color: #00FFF5;
   padding: 1rem 0.5rem;
   display: inline-block;
-  margin-left: -0.5rem; }
+  margin-left: -0.5rem;
+  white-space: nowrap; }
 
 .is-coral {
   color: #f83281; }
@@ -7059,7 +7060,7 @@ h1.title > span {
         .hero-wrapper .header-text h1.title > span {
           font-size: 3rem;
           white-space: nowrap;
-          line-height: 1; } }
+          line-height: 1r; } }
       @media screen and (min-width: 1024px) {
         .hero-wrapper .header-text h1.title > span {
           font-size: 4rem;
@@ -7092,14 +7093,6 @@ h1.title > span {
 .feature-tiles .is-xlarge {
   height: 4rem;
   width: 4rem; }
-
-.feature-tiles p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
 
 .our-core-values {
   display: flex; }
