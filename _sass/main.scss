@@ -121,7 +121,9 @@ h1.title > span {
     h1.title > span {
       padding: 0.5rem;
       font-size: 4rem;
-      white-space: nowrap;
+      @include desktop {
+        white-space: nowrap;
+      }
     }
     h2.subtitle {
       padding: 0.5rem;
