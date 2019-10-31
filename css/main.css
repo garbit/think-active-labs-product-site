@@ -7419,3 +7419,7 @@ footer {
 
 .footer {
   background-color: #022A39; }
+  .footer a {
+    color: #00FFF5; }
+  .footer :hover {
+    text-decoration: underline; }
