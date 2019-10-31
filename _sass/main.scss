@@ -65,7 +65,7 @@ section.section {
     padding: 8rem 6rem;
   }
   @include mobile {
-    padding: 6rem 1.5rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -154,8 +154,9 @@ h1.title > span {
     }
     h2.subtitle {
       padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.5);
-      margin-top: 0.25rem
+      background: rgba(255, 255, 255, 0.9);
+      margin-top: 0.25rem;
+      border-radius: 3px;
     }
   }
 }
@@ -307,6 +308,7 @@ h1.title > span {
 
   .feature-descriptions {
     position:relative;
+    padding: 1rem;
 
     .selector {
       color: #939c9e;

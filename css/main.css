@@ -6981,7 +6981,7 @@ a.inline-nav {
 
 @media screen and (max-width: 768px) {
   section.section {
-    padding: 6rem 1.5rem; } }
+    padding: 6rem 2rem; } }
 
 h1.title > span {
   background-color: #00FFF5;
@@ -7044,8 +7044,9 @@ h1.title > span {
           white-space: nowrap; } }
     .hero-wrapper .header-text h2.subtitle {
       padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.5);
-      margin-top: 0.25rem; }
+      background: rgba(255, 255, 255, 0.9);
+      margin-top: 0.25rem;
+      border-radius: 3px; }
 
 .new-hero-stripes-wrapper {
   height: 100%;
@@ -7159,7 +7160,8 @@ h1.title > span {
     max-height: 40vh; }
 
 .feature .feature-descriptions {
-  position: relative; }
+  position: relative;
+  padding: 1rem; }
   .feature .feature-descriptions .selector {
     color: #939c9e;
     cursor: pointer; }
