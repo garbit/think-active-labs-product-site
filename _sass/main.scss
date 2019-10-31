@@ -119,50 +119,6 @@ h1.title > span {
   }
 }
 
-
-.new-header-wrapper {
-  min-height: 600px;
-  position: relative;
-
-  .new-header {
-    height: 100%;
-    background: url("../public/images/hero-stripes.png") no-repeat center center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  h1.title, h2.subtitle {
-    color: $TAL-dark;
-  }
-  .header-text {
-    margin-top: 15%;
-    h1.title > span {
-      padding: 0.5rem;
-      font-size: 4rem;
-      @include desktop {
-        white-space: nowrap;
-      }
-    }
-    h2.subtitle {
-      padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.5);
-      margin-top: 0.25rem
-    }
-  }
-}
-
-.new-header::after {
-  content:"";
-  position: absolute;
-  border-top: 15px solid #1C736F;
-  width: 100%;
-  transform: rotate(-7deg);
-  transform-origin: 0% 0%;
-  bottom: 0;
-  left: 0;
-}
-
 .hero-wrapper {
   position: relative;
 
@@ -219,28 +175,6 @@ h1.title > span {
   }
 }
 
-// .hero-angles {
-//   width: 100%;
-//   height: 100%;
-//   overflow: hidden;
-//   transform: skewY(-7deg);
-//   transform-origin: 0;
-//   position: absolute;
-//   box-shadow: inset 0 -10px 80px -10px rgba(0, 0, 0, 0.1);
-//   border-bottom: 15px solid $primary;
-// }
-
-// .hero-stripes {
-//   height: 100%;
-//   width: 100%;
-//   position: relative;
-//   background: url("../public/images/hero-stripes.png") no-repeat center center fixed;
-//   // margin-top: -$navbar-height;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
 .feature-tiles {
   .columns {
     align-items: stretch;
@@ -248,14 +182,6 @@ h1.title > span {
   .is-xlarge {
     height: 4rem;
     width: 4rem;
-  }
-  p {
-    // word-wrap: break-word;
-    // overflow-wrap: break-word;
-    // -webkit-hyphens: auto;
-    // -moz-hyphens: auto;
-    // -ms-hyphens: auto;
-    // hyphens: auto;
   }
 }
 
@@ -327,23 +253,7 @@ h1.title > span {
   }
 }
 
-// #8b8b8b 49%
-// 139 0 .49
-// .active-hub::before {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-//   top: 0px;
-//   left: 0px;
-//   background: #003832;
-//   // transform: skewY(-90deg);
-//   z-index: -1;
-// }
-
 .active-hub {
-  // background: linear-gradient(-45deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1));
   background: linear-gradient(-15deg,rgba(139, 139, 139, 0.3), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   @include mobile {
     .feature-image {
@@ -353,8 +263,6 @@ h1.title > span {
 }
 
 .browser-slider-wrapper {
-  // background: url("../public/images/browser.png") top center no-repeat;
-  // background-size: 100% 100%;
   border: 12px solid #eee;
   border-width: 14px 5px 5px 5px;
   border-radius: 6px;
@@ -680,6 +588,16 @@ h1.title > span {
   }
 }
 
+.footer-logos {
+  background-color: $TAL-dark;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding: 3rem 2rem;
+  h2 {
+    color: white;
+  }
+}
+
 footer {
   color: white;
   z-index: 2;
@@ -688,16 +606,6 @@ footer {
 .footer {
   background-color: $TAL-dark;
 }
-// .feature-background-right ::after {
-//     content: '';
-//     width: 100%;
-//     height: 100%;
-//     top: 0px;
-//     z-index: -1;
-//     right: -65% !important;
-//     position: absolute;
-//     background: #14236E;
-// }
 
 // FOOTER
 // footer.footer {

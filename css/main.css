@@ -7016,40 +7016,6 @@ h1.title > span {
   background-color: transparent;
   background-image: none; }
 
-.new-header-wrapper {
-  min-height: 600px;
-  position: relative; }
-  .new-header-wrapper .new-header {
-    height: 100%;
-    background: url("../public/images/hero-stripes.png") no-repeat center center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .new-header-wrapper h1.title, .new-header-wrapper h2.subtitle {
-    color: #022A39; }
-  .new-header-wrapper .header-text {
-    margin-top: 15%; }
-    .new-header-wrapper .header-text h1.title > span {
-      padding: 0.5rem;
-      font-size: 4rem; }
-      @media screen and (min-width: 1024px) {
-        .new-header-wrapper .header-text h1.title > span {
-          white-space: nowrap; } }
-    .new-header-wrapper .header-text h2.subtitle {
-      padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.5);
-      margin-top: 0.25rem; }
-
-.new-header::after {
-  content: "";
-  position: absolute;
-  border-top: 15px solid #1C736F;
-  width: 100%;
-  transform: rotate(-7deg);
-  transform-origin: 0% 0%;
-  bottom: 0;
-  left: 0; }
-
 .hero-wrapper {
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -7409,6 +7375,14 @@ h1.title > span {
     transform-origin: 0;
     border-bottom: 15px solid #00FFF5;
     background-color: #00FFF5; }
+
+.footer-logos {
+  background-color: #022A39;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding: 3rem 2rem; }
+  .footer-logos h2 {
+    color: white; }
 
 footer {
   color: white;

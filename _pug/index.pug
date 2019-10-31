@@ -2,22 +2,6 @@ extends layout.pug
 
 block body
 
-  //- .new-header-wrapper
-  //-   div.new-header
-  //-     section.hero
-  //-       .hero-body
-  //-         .container
-  //-           .columns
-  //-             .column.is-7
-  //-               img(src="public/images/activebands-falling.png")
-  //-             .column.is-5.header-text
-  //-               h1.title
-  //-                 span Be Active.
-  //-                 span Think Active.
-  //-               h2.subtitle.is-size-4 Activity tracking for children aged 7+ in the classroom
-
-
-  //- include components/hero-full-height.pug
   //- Hero Header start
   .hero-wrapper
     .new-hero-stripes-wrapper
@@ -249,6 +233,13 @@ block body
                   input.input.is-large(type="text" placeholder="Enter your email here")
           .column.is-2
             button.button.is-outlined.is-large Subscribe
+
+  section.footer-logos
+    .container
+      h2.subtitle We're proud to be from the North East
+      a(href="https://newcastlehelix.com/" target="_blank")
+        img(src="public/images/newcastle-helix.svg" alt="Newcastle Helix Logo with the words Newcastle Helix")
+      img(src="public/images/mdae-in-north-east.svg" alt="North East Wall")
 
 
 
