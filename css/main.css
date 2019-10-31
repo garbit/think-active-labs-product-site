@@ -6962,14 +6962,18 @@ html {
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
 
 .page-content {
   flex: 1;
   margin-top: 3.2rem; }
 
 a.inline-nav {
-  padding-top: 8rem; }
+  display: block;
+  position: relative;
+  top: -8rem;
+  visibility: hidden; }
 
 @media screen and (min-width: 769px), print {
   section.section {
@@ -6977,11 +6981,11 @@ a.inline-nav {
 
 @media screen and (max-width: 768px) {
   section.section {
-    padding: 6rem 3rem; } }
+    padding: 6rem 1.5rem; } }
 
 h1.title > span {
   background-color: #00FFF5;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.25rem;
   display: inline-block;
   margin-left: -0.5rem;
   white-space: nowrap; }
@@ -7031,9 +7035,9 @@ h1.title > span {
       display: table; }
       @media screen and (max-width: 768px) {
         .hero-wrapper .header-text h1.title > span {
-          font-size: 3rem;
+          font-size: 2.5rem;
           white-space: nowrap;
-          line-height: 1r; } }
+          line-height: 1rem; } }
       @media screen and (min-width: 1024px) {
         .hero-wrapper .header-text h1.title > span {
           font-size: 4rem;
@@ -7061,7 +7065,8 @@ h1.title > span {
     background-size: cover; }
 
 .feature-tiles .columns {
-  align-items: stretch; }
+  align-items: stretch;
+  padding: 0.5rem; }
 
 .feature-tiles .is-xlarge {
   height: 4rem;
@@ -7341,8 +7346,9 @@ h1.title > span {
   max-height: 25vh; }
 
 .think-active-benefits {
-  background-color: #022A39;
-  padding-bottom: 300px !important; }
+  background-color: #022A39; }
+  .think-active-benefits .section {
+    padding-bottom: 2rem; }
   .think-active-benefits h1, .think-active-benefits h2, .think-active-benefits h3, .think-active-benefits h4, .think-active-benefits h5, .think-active-benefits p {
     color: #FFFFFF; }
   .think-active-benefits h3.title {
@@ -7356,25 +7362,48 @@ h1.title > span {
     font-weight: 600;
     margin-top: 1.5rem; }
 
+.stripe-box {
+  height: 6vh;
+  background-color: #022A39;
+  min-height: calc(80px + 6vw); }
+  .stripe-box > div {
+    -webkit-clip-path: polygon(0 0, 100% calc(100% - 6vw), 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% calc(100% - 6vw), 100% 100%, 0 100%);
+    background-color: #00FFF5;
+    height: 100%;
+    width: 100%; }
+
 .subscribe {
-  position: relative; }
+  padding: 0rem 2rem 4rem;
+  background-color: #00FFF5; }
   .subscribe input {
     background-color: #00FFF5;
     color: #022A39;
     border-color: #36023b; }
 
-.subscribe-stripe-wrapper {
-  position: relative;
-  background-color: #00FFF5; }
-  .subscribe-stripe-wrapper .subscribe-stripe {
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: -50%;
-    transform: skewY(3deg);
-    transform-origin: 0;
-    border-bottom: 15px solid #00FFF5;
-    background-color: #00FFF5; }
+#mc_embed_signup {
+  clear: left;
+  width: 100%; }
+  #mc_embed_signup .icon {
+    color: #022A39; }
+  #mc_embed_signup input {
+    font-weight: 600; }
+  #mc_embed_signup input.button {
+    background-color: #022A39;
+    color: white;
+    font-weight: 700; }
+  #mc_embed_signup input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #022A39;
+    font-size: 0.85rem; }
+  #mc_embed_signup input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #022A39;
+    font-size: 0.85rem; }
+  #mc_embed_signup input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #022A39;
+    font-size: 0.85rem; }
 
 .footer-logos {
   background-color: #022A39;

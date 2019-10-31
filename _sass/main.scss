@@ -45,6 +45,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .page-content {
@@ -53,7 +54,10 @@ body {
 }
 
 a.inline-nav {
-  padding-top: 8rem;
+  display: block;
+  position: relative;
+  top: -8rem;
+  visibility: hidden;
 }
 
 section.section {
@@ -61,13 +65,13 @@ section.section {
     padding: 8rem 6rem;
   }
   @include mobile {
-    padding: 6rem 3rem;
+    padding: 6rem 1.5rem;
   }
 }
 
 h1.title > span {
   background-color: $primary;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.25rem;
   display: inline-block;
   margin-left: -0.5rem;
   white-space: nowrap;
@@ -139,9 +143,9 @@ h1.title > span {
       display: table;
 
       @include mobile {
-        font-size: 3rem;
+        font-size: 2.5rem;
         white-space: nowrap;
-        line-height: 1r;
+        line-height: 1rem;
       }
       @include desktop {
         font-size: 4rem;
@@ -178,6 +182,7 @@ h1.title > span {
 .feature-tiles {
   .columns {
     align-items: stretch;
+    padding: 0.5rem;
   }
   .is-xlarge {
     height: 4rem;
@@ -542,8 +547,13 @@ h1.title > span {
 }
 
 .think-active-benefits {
+  // background-color: $primary;
   background-color: $TAL-dark;
-  padding-bottom: 300px !important;
+
+  .section {
+    padding-bottom: 2rem;
+  }
+
   h1, h2, h3, h4, h5, p {
     color: #FFFFFF;
   }
@@ -564,8 +574,24 @@ h1.title > span {
   }
 }
 
+.stripe-box {
+  height: 6vh;
+  background-color: $TAL-dark;
+  min-height: calc(80px + 6vw);
+
+  > div {
+    -webkit-clip-path: polygon(0 0, 100% calc(100% - 6vw), 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% calc(100% - 6vw), 100% 100%, 0 100%);
+    background-color: $primary;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .subscribe {
-  position: relative;
+  padding: 0rem 2rem 4rem;
+  background-color: $primary;
+
   input {
     background-color: $primary;
     color: $TAL-dark;
@@ -573,18 +599,37 @@ h1.title > span {
   }
 }
 
-.subscribe-stripe-wrapper {
-  position: relative;
-  background-color: $primary;
-  .subscribe-stripe {
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: -50%;
-    transform: skewY(3deg);
-    transform-origin: 0;
-    border-bottom: 15px solid $primary;
-    background-color: $primary;
+// Mailchimp form
+#mc_embed_signup{
+  clear:left;
+  width:100%;
+  .icon {
+    color: $TAL-dark;
+  }
+
+  input {
+    font-weight: 600;
+  }
+
+  input.button {
+    background-color: $TAL-dark;
+    color: white;
+    font-weight: 700;
+  }
+
+  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $TAL-dark;
+    font-size: 0.85rem;
+  }
+
+  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $TAL-dark;
+    font-size: 0.85rem;
+  }
+
+  input::-ms-input-placeholder { /* Microsoft Edge */
+    color: $TAL-dark;
+    font-size: 0.85rem;
   }
 }
 
