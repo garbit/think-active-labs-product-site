@@ -7023,6 +7023,11 @@ h1.title > span {
 
 .hero-wrapper {
   position: relative; }
+  .hero-wrapper .button, .hero-wrapper .is-primary {
+    color: #022A39;
+    font-weight: 600; }
+  .hero-wrapper .button.is-primary:hover {
+    color: #022A39; }
   @media screen and (max-width: 768px) {
     .hero-wrapper .columns {
       display: flex;

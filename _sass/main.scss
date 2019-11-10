@@ -128,6 +128,15 @@ h1.title > span {
 .hero-wrapper {
   position: relative;
 
+  .button, .is-primary {
+    color: $TAL-dark;
+    font-weight: 600;
+  }
+
+  .button.is-primary:hover {
+    color: $TAL-dark;
+  }
+
   .columns {
     @include mobile {
       display: flex;
